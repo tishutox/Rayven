@@ -10,97 +10,78 @@
    <!--=============== CSS ===============-->
    <link rel="stylesheet" href="assets/css/styles.css">
 
-   <title>Funkenwerk</title>
+   <title>Pandoba Augsburg</title>
 </head>
 <body>
    <!--=============== HEADER ===============-->
    <header class="header">
       <nav class="nav container">
          <div class="nav__data">
-            <a href="#" class="nav__logo">
-               <i class="ri-ghost-4-line"></i> Funkenwerk
+            <a href="index.html" class="nav__logo">
+               <img src="assets/img/logo.png" alt="Logo">
             </a>
 
-            <div class="nav__toggle" id="nav-toggle">
-               <i class="ri-menu-4-line nav__burger"></i>
-               <i class="ri-close-line nav__close"></i>
+            <div class="nav__actions">
+               <button id="theme-toggle" class="nav__theme-toggle" aria-label="Farbschema wechseln" title="Dark / Light Mode">
+                  <i class="ri-moon-clear-line"></i>
+               </button>
+               <div class="nav__toggle" id="nav-toggle">
+                  <i class="ri-menu-4-line nav__burger"></i>
+                  <i class="ri-close-line nav__close"></i>
+               </div>
             </div>
          </div>
 
          <!--=============== NAV MENU ===============-->
          <div class="nav__menu" id="nav-menu">
             <ul class="nav__list">
+               <li class="nav__theme-li">
+                  <button class="nav__theme-toggle" aria-label="Farbschema wechseln" title="Dark / Light Mode">
+                     <i class="ri-moon-clear-line"></i>
+                  </button>
+               </li>
+
                <!--=============== DROPDOWN 1 ===============-->
                <li class="dropdown__item">
                   <div class="nav__link">
-                     Das Funkenwerk <i class="ri-arrow-down-s-line dropdown__arrow"></i>
+                     Menü <i class="ri-arrow-down-s-line dropdown__arrow"></i>
                   </div>
 
                   <ul class="dropdown__menu">
                      <li>
-                        <a href="Das-Funkenwerk/Team.html" class="dropdown__link">
-                           <i class="ri-group-line"></i> Team
+                        <a href="#classic-milk-tea" class="dropdown__link">
+                           <i class="ri-cup-line"></i> Classic Milk Tea
                         </a>
                      </li>
 
-                     <!--=============== DROPDOWN SUBMENU 1 ===============-->
-                     <li class="dropdown__subitem">
-                        <div class="dropdown__link">
-                           <i class="ri-lightbulb-line"></i> Gründungsteams <i class="ri-add-line dropdown__add"></i>
-                        </div>
-
-                        <ul class="dropdown__submenu">
-                           <li>
-                              <a href="Das-Funkenwerk/Gruendungsteams/HerVenture-Teams.html" class="dropdown__sublink">
-                                 <i class="ri-women-line"></i> HerVenture Teams
-                              </a>
-                           </li>
-
-                           <li>
-                              <a href="Das-Funkenwerk/Gruendungsteams/Inkubatorteams.html" class="dropdown__sublink">
-                                 <i class="ri-seedling-line"></i> Inkubatorteams
-                              </a>
-                           </li>
-
-                           <li>
-                              <a href="Das-Funkenwerk/Gruendungsteams/Start-Ups.html" class="dropdown__sublink">
-                                 <i class="ri-rocket-line"></i> Start-Ups
-                              </a>
-                           </li>
-                        </ul>
+                     <li>
+                        <a href="#latte" class="dropdown__link">
+                           <i class="ri-drinks-line"></i> Latte
+                        </a>
                      </li>
 
-                     <!--=============== DROPDOWN SUBMENU 2 ===============-->
-                     <li class="dropdown__subitem">
-                        <div class="dropdown__link">
-                           <i class="ri-global-line"></i> Netzwerk <i class="ri-add-line dropdown__add"></i>
-                        </div>
+                     <li>
+                        <a href="#flavored-tea" class="dropdown__link">
+                           <i class="ri-cup-line"></i> Flavored Tea
+                        </a>
+                     </li>
 
-                        <ul class="dropdown__submenu">
-                           <li>
-                              <a href="Das-Funkenwerk/Netzwerk/Botschafter-innen.html" class="dropdown__sublink">
-                                 <i class="ri-megaphone-line"></i> Botschafter:innen
-                              </a>
-                           </li>
+                     <li>
+                        <a href="#flavored-yoghurt" class="dropdown__link">
+                           <i class="ri-cookie-line"></i> Flavored Yoghurt
+                        </a>
+                     </li>
 
-                           <li>
-                              <a href="Das-Funkenwerk/Netzwerk/Gruendungsbeirat.html" class="dropdown__sublink">
-                                 <i class="ri-discuss-line"></i> Gründungsbeirat
-                              </a>
-                           </li>
+                     <li>
+                        <a href="#juice-soda" class="dropdown__link">
+                           <i class="ri-drinks-2-line"></i> Juice Soda
+                        </a>
+                     </li>
 
-                           <li>
-                              <a href="Das-Funkenwerk/Netzwerk/Mentorinnen.html" class="dropdown__sublink">
-                                 <i class="ri-parent-line"></i> Mentorinnen
-                              </a>
-                           </li>
-
-                           <li>
-                              <a href="Das-Funkenwerk/Netzwerk/Partnernetzwerk.html" class="dropdown__sublink">
-                                 <i class="ri-shake-hands-line"></i> Partnernetzwerk
-                              </a>
-                           </li>
-                        </ul>
+                     <li>
+                        <a href="#specials" class="dropdown__link">
+                           <i class="ri-sparkling-2-line"></i> Specials
+                        </a>
                      </li>
                   </ul>
                </li>
@@ -108,19 +89,19 @@
                <!--=============== DROPDOWN 2 ===============-->
                <li class="dropdown__item">
                   <div class="nav__link">
-                     Aktuelles <i class="ri-arrow-down-s-line dropdown__arrow"></i>
+                     Über Uns <i class="ri-arrow-down-s-line dropdown__arrow"></i>
                   </div>
 
                   <ul class="dropdown__menu">
                      <li>
-                        <a href="Aktuelles/News-und-Termine.html" class="dropdown__link">
-                           <i class="ri-newspaper-line"></i> News und Termine
+                        <a href="ueber-uns.html#geschichte" class="dropdown__link">
+                           <i class="ri-history-line"></i> Geschichte
                         </a>
                      </li>
 
                      <li>
-                        <a href="Aktuelles/Schwarzes-Brett.html" class="dropdown__link">
-                           <i class="ri-artboard-line"></i> Schwarzes Brett
+                        <a href="ueber-uns.html#bewertungen" class="dropdown__link">
+                           <i class="ri-star-line"></i> Bewertungen
                         </a>
                      </li>
                   </ul>
@@ -129,97 +110,25 @@
                <!--=============== DROPDOWN 3 ===============-->
                <li class="dropdown__item">
                   <div class="nav__link">
-                     Angebote <i class="ri-arrow-down-s-line dropdown__arrow"></i>
-                  </div>
-
-                  <ul class="dropdown__menu">
-                     <li>
-                        <a href="Angebote/Sprechstunde-fuer-deine-Ideen.html" class="dropdown__link">
-                           <i class="ri-discuss-line"></i> Sprechstunde für deine Ideen
-                        </a>
-                     </li>
-
-                     <!--=============== DROPDOWN SUBMENU 1 ===============-->
-                     <li class="dropdown__subitem">
-                        <div class="dropdown__link">
-                           <i class="ri-hand-coin-line"></i> Förderungen <i class="ri-add-line dropdown__add"></i>
-                        </div>
-
-                        <ul class="dropdown__submenu">
-                           <li>
-                              <a href="Angebote/Foerderungen/HerVenture.html" class="dropdown__sublink">
-                                 <i class="ri-women-line"></i> HerVenture
-                              </a>
-                           </li>
-
-                           <li>
-                              <a href="Angebote/Foerderungen/Funkenwerk-Award.html" class="dropdown__sublink">
-                                 <i class="ri-award-line"></i> Funkenwerk Award
-                              </a>
-                           </li>
-                        </ul>
-                     </li>
-
-                     <li>
-                        <a href="Angebote/Seminare-und-Projekte.html" class="dropdown__link">
-                           <i class="ri-slideshow-line"></i> Seminare & Projekte
-                        </a>
-                     </li>
-
-                     <li>
-                        <a href="Angebote/Abschlussarbeit.html" class="dropdown__link">
-                           <i class="ri-graduation-cap-line"></i> Abschlussarbeit
-                        </a>
-                     </li>
-
-                     <li>
-                        <a href="Angebote/Inkubator.html" class="dropdown__link">
-                           <i class="ri-seedling-line"></i> Inkubator
-                        </a>
-                     </li>
-
-                     <li>
-                        <a href="Angebote/Forschen-und-Gruenden.html" class="dropdown__link">
-                           <i class="ri-microscope-line"></i> Forschen und Gründen
-                        </a>
-                     </li>
-
-                     <li>
-                        <a href="Angebote/Mittelstandmacher.html" class="dropdown__link">
-                           <i class="ri-briefcase-line"></i> Mittelstandmacher
-                        </a>
-                     </li>
-
-                     <li>
-                        <a href="Angebote/Funkenwerk-Campus.html" class="dropdown__link">
-                           <i class="ri-school-line"></i> Funkenwerk Campus
-                        </a>
-                     </li>
-                  </ul>
-               </li>
-
-               <!--=============== DROPDOWN 4 ===============-->
-               <li class="dropdown__item">
-                  <div class="nav__link">
                      Kontakt <i class="ri-arrow-down-s-line dropdown__arrow"></i>
                   </div>
 
                   <ul class="dropdown__menu">
                      <li>
-                        <a href="Kontakt/Newsletter.html" class="dropdown__link">
-                           <i class="ri-newspaper-line"></i> Newsletter
+                        <a href="kontakt.html#bestellformular" class="dropdown__link">
+                           <i class="ri-contacts-book-line"></i> Formular
                         </a>
                      </li>
 
                      <li>
-                        <a href="Kontakt/Pressematerial.html" class="dropdown__link">
-                           <i class="ri-camera-lens-line"></i> Pressematerial
+                        <a href="kontakt.html#karte" class="dropdown__link">
+                           <i class="ri-map-line"></i> Karte
                         </a>
                      </li>
 
                      <li>
-                        <a href="Kontakt/Anschrift.html" class="dropdown__link">
-                           <i class="ri-map-pin-2-line"></i> Anschrift
+                        <a href="kontakt.html#galerie" class="dropdown__link">
+                           <i class="ri-gallery-line"></i> Bilder
                         </a>
                      </li>
                   </ul>
@@ -229,91 +138,1613 @@
       </nav>
    </header>
 
-   <main class="main">
-      <section class="banner container" aria-label="Funkenwerk Banner">
-         <img src="assets/banners/Funkenwerk.png" alt="Funkenwerk Banner" class="banner__image">
-      </section>
-
-      <section class="home container">
-         <h1 class="home__headline">Starte deinen Ideenfunken &ndash; Wir begleiten dich bis zum Gründungsfeuerwerk</h1>
-         <p class="home__intro">
-            Im Funkenwerk bekommst du alles, was deine Idee braucht: Beratung, Workshops, Programme und ein starkes Netzwerk. Egal ob du noch ganz am Anfang stehst oder schon an einer konkreten Geschäftsidee arbeitest &ndash; wir helfen dir, deine Idee Schritt für Schritt weiterzuentwickeln und mögliche nächste Schritte Richtung Startup zu gehen.<br><br>
-            <a href="Angebote/Sprechstunde-fuer-deine-Ideen.html">Hier kannst du eine Sprechstunde buchen</a>
-         </p>
-
-         <h2 class="home__subheadline">Wie möchtest du starten?</h2>
-
-         <div class="home__cards">
-            <div class="home__card">
-               <h3 class="home__card-title">Entrepreneurship kennenlernen</h3>
-               <p class="home__card-text">Du bist neugierig auf Innovation und Unternehmertum? Hier lernst du, wie Ideen entstehen, kannst erste Ansätze ausprobieren.</p>
-               <a href="Angebote/Seminare-und-Projekte.html" class="home__card-link">
-                  <img src="assets/icons/homework.png" alt="Entrepreneurship kennenlernen" class="home__card-image">
-               </a>
+      <main class="main">
+      <section class="menu-page container">
+         <h1 class="menu-page__title">Menükarte</h1>
+         <section class="menu-category" id="classic-milk-tea">
+            <h2 class="menu-category__title">Classic Milk Tea</h2>
+            <p class="menu-category__note">Alle Getränke werden mit einem Topping Ihrer Wahl zubereitet.</p>
+            <div class="menu-category__items">
+                  <details class="menu-item">
+                     <summary class="menu-item__summary">
+                        <span class="menu-item__name">Caramel Milk Tea 0,7l</span>
+                        <span class="menu-item__price">7,00 €</span>
+                     </summary>
+                     <div class="menu-item__body">
+                        <h3 class="menu-item__subtitle">Stoffe oder Erzeugnisse, die Allergien oder Intoleranzen auslösen</h3>
+                        <ul class="menu-item__list">
+                           <li>Mit Konservierungsstoffen</li>
+                           <li>Enthält Koffein</li>
+                        </ul>
+                        <h3 class="menu-item__subtitle">Allergene</h3>
+                        <ul class="menu-item__list">
+                           <li>Enthält Milch/-Erzeugnisse (laktosehaltig)</li>
+                        </ul>
+                        <p class="menu-item__disclaimer">Druckfehler, Irrtümer und Änderungen vorbehalten.</p>
+                     </div>
+                  </details>
+                  <details class="menu-item">
+                     <summary class="menu-item__summary">
+                        <span class="menu-item__name">Taro Milk Tea 0,5l</span>
+                        <span class="menu-item__price">6,50 €</span>
+                     </summary>
+                     <div class="menu-item__body">
+                        <h3 class="menu-item__subtitle">Stoffe oder Erzeugnisse, die Allergien oder Intoleranzen auslösen</h3>
+                        <ul class="menu-item__list">
+                           <li>Enthält Koffein</li>
+                           <li>Mit Farbstoff</li>
+                        </ul>
+                        <h3 class="menu-item__subtitle">Allergene</h3>
+                        <ul class="menu-item__list">
+                           <li>Enthält Milch/-Erzeugnisse (laktosehaltig)</li>
+                        </ul>
+                        <p class="menu-item__disclaimer">Druckfehler, Irrtümer und Änderungen vorbehalten.</p>
+                     </div>
+                  </details>
+                  <details class="menu-item">
+                     <summary class="menu-item__summary">
+                        <span class="menu-item__name">Taro Milk Tea 0,7l</span>
+                        <span class="menu-item__price">7,00 €</span>
+                     </summary>
+                     <div class="menu-item__body">
+                        <h3 class="menu-item__subtitle">Stoffe oder Erzeugnisse, die Allergien oder Intoleranzen auslösen</h3>
+                        <ul class="menu-item__list">
+                           <li>Enthält Koffein</li>
+                           <li>Mit Farbstoff</li>
+                        </ul>
+                        <h3 class="menu-item__subtitle">Allergene</h3>
+                        <ul class="menu-item__list">
+                           <li>Enthält Milch/-Erzeugnisse (laktosehaltig)</li>
+                        </ul>
+                        <p class="menu-item__disclaimer">Druckfehler, Irrtümer und Änderungen vorbehalten.</p>
+                     </div>
+                  </details>
+                  <details class="menu-item">
+                     <summary class="menu-item__summary">
+                        <span class="menu-item__name">Taro Mango Milk Tea 0,5l</span>
+                        <span class="menu-item__price">6,50 €</span>
+                     </summary>
+                     <div class="menu-item__body">
+                        <h3 class="menu-item__subtitle">Stoffe oder Erzeugnisse, die Allergien oder Intoleranzen auslösen</h3>
+                        <ul class="menu-item__list">
+                           <li>Mit Konservierungsstoffen</li>
+                           <li>Mit Süßungsmittel(n)</li>
+                           <li>Enthält Koffein</li>
+                           <li>Mit Farbstoff</li>
+                        </ul>
+                        <h3 class="menu-item__subtitle">Allergene</h3>
+                        <ul class="menu-item__list">
+                           <li>Enthält Milch/-Erzeugnisse (laktosehaltig)</li>
+                        </ul>
+                        <p class="menu-item__disclaimer">Druckfehler, Irrtümer und Änderungen vorbehalten.</p>
+                     </div>
+                  </details>
+                  <details class="menu-item">
+                     <summary class="menu-item__summary">
+                        <span class="menu-item__name">Jasmin Green Milk Tea 0,5l</span>
+                        <span class="menu-item__price">6,50 €</span>
+                     </summary>
+                     <div class="menu-item__body">
+                        <h3 class="menu-item__subtitle">Stoffe oder Erzeugnisse, die Allergien oder Intoleranzen auslösen</h3>
+                        <ul class="menu-item__list">
+                           <li>Enthält Koffein</li>
+                           <li>Mit Farbstoff</li>
+                        </ul>
+                        <h3 class="menu-item__subtitle">Allergene</h3>
+                        <ul class="menu-item__list">
+                           <li>Enthält Milch/-Erzeugnisse (laktosehaltig)</li>
+                        </ul>
+                        <p class="menu-item__disclaimer">Druckfehler, Irrtümer und Änderungen vorbehalten.</p>
+                     </div>
+                  </details>
+                  <details class="menu-item">
+                     <summary class="menu-item__summary">
+                        <span class="menu-item__name">Caramel Milk Tea 0,5l</span>
+                        <span class="menu-item__price">6,50 €</span>
+                     </summary>
+                     <div class="menu-item__body">
+                        <h3 class="menu-item__subtitle">Stoffe oder Erzeugnisse, die Allergien oder Intoleranzen auslösen</h3>
+                        <ul class="menu-item__list">
+                           <li>Mit Konservierungsstoffen</li>
+                           <li>Enthält Koffein</li>
+                        </ul>
+                        <h3 class="menu-item__subtitle">Allergene</h3>
+                        <ul class="menu-item__list">
+                           <li>Enthält Milch/-Erzeugnisse (laktosehaltig)</li>
+                        </ul>
+                        <p class="menu-item__disclaimer">Druckfehler, Irrtümer und Änderungen vorbehalten.</p>
+                     </div>
+                  </details>
+                  <details class="menu-item">
+                     <summary class="menu-item__summary">
+                        <span class="menu-item__name">Taro Mango Milk Tea 0,7l</span>
+                        <span class="menu-item__price">7,00 €</span>
+                     </summary>
+                     <div class="menu-item__body">
+                        <h3 class="menu-item__subtitle">Stoffe oder Erzeugnisse, die Allergien oder Intoleranzen auslösen</h3>
+                        <ul class="menu-item__list">
+                           <li>Mit Konservierungsstoffen</li>
+                           <li>Mit Süßungsmittel(n)</li>
+                           <li>Enthält Koffein</li>
+                           <li>Mit Farbstoff</li>
+                        </ul>
+                        <h3 class="menu-item__subtitle">Allergene</h3>
+                        <ul class="menu-item__list">
+                           <li>Enthält Milch/-Erzeugnisse (laktosehaltig)</li>
+                        </ul>
+                        <p class="menu-item__disclaimer">Druckfehler, Irrtümer und Änderungen vorbehalten.</p>
+                     </div>
+                  </details>
+                  <details class="menu-item">
+                     <summary class="menu-item__summary">
+                        <span class="menu-item__name">Strawberry Milk Tea 0,7l</span>
+                        <span class="menu-item__price">7,00 €</span>
+                     </summary>
+                     <div class="menu-item__body">
+                        <h3 class="menu-item__subtitle">Stoffe oder Erzeugnisse, die Allergien oder Intoleranzen auslösen</h3>
+                        <ul class="menu-item__list">
+                           <li>Enthält Koffein</li>
+                           <li>Mit Farbstoff</li>
+                        </ul>
+                        <h3 class="menu-item__subtitle">Allergene</h3>
+                        <ul class="menu-item__list">
+                           <li>Enthält Milch/-Erzeugnisse (laktosehaltig)</li>
+                        </ul>
+                        <p class="menu-item__disclaimer">Druckfehler, Irrtümer und Änderungen vorbehalten.</p>
+                     </div>
+                  </details>
+                  <details class="menu-item">
+                     <summary class="menu-item__summary">
+                        <span class="menu-item__name">Mango Milk Tea 0,5l</span>
+                        <span class="menu-item__price">6,50 €</span>
+                     </summary>
+                     <div class="menu-item__body">
+                        <h3 class="menu-item__subtitle">Stoffe oder Erzeugnisse, die Allergien oder Intoleranzen auslösen</h3>
+                        <ul class="menu-item__list">
+                           <li>Mit Konservierungsstoffen</li>
+                           <li>Mit Süßungsmittel(n)</li>
+                           <li>Enthält Koffein</li>
+                        </ul>
+                        <h3 class="menu-item__subtitle">Allergene</h3>
+                        <ul class="menu-item__list">
+                           <li>Enthält Milch/-Erzeugnisse (laktosehaltig)</li>
+                        </ul>
+                        <p class="menu-item__disclaimer">Druckfehler, Irrtümer und Änderungen vorbehalten.</p>
+                     </div>
+                  </details>
+                  <details class="menu-item">
+                     <summary class="menu-item__summary">
+                        <span class="menu-item__name">Mango Milk Tea 0,7l</span>
+                        <span class="menu-item__price">7,00 €</span>
+                     </summary>
+                     <div class="menu-item__body">
+                        <h3 class="menu-item__subtitle">Stoffe oder Erzeugnisse, die Allergien oder Intoleranzen auslösen</h3>
+                        <ul class="menu-item__list">
+                           <li>Mit Konservierungsstoffen</li>
+                           <li>Mit Süßungsmittel(n)</li>
+                           <li>Enthält Koffein</li>
+                        </ul>
+                        <h3 class="menu-item__subtitle">Allergene</h3>
+                        <ul class="menu-item__list">
+                           <li>Enthält Milch/-Erzeugnisse (laktosehaltig)</li>
+                        </ul>
+                        <p class="menu-item__disclaimer">Druckfehler, Irrtümer und Änderungen vorbehalten.</p>
+                     </div>
+                  </details>
+                  <details class="menu-item">
+                     <summary class="menu-item__summary">
+                        <span class="menu-item__name">QQ Classic Black Milk Tea 0,7l</span>
+                        <span class="menu-item__price">7,00 €</span>
+                     </summary>
+                     <div class="menu-item__body">
+                        <h3 class="menu-item__subtitle">Stoffe oder Erzeugnisse, die Allergien oder Intoleranzen auslösen</h3>
+                        <ul class="menu-item__list">
+                           <li>Enthält Koffein</li>
+                        </ul>
+                        <h3 class="menu-item__subtitle">Allergene</h3>
+                        <ul class="menu-item__list">
+                           <li>Enthält Milch/-Erzeugnisse (laktosehaltig)</li>
+                        </ul>
+                        <p class="menu-item__disclaimer">Druckfehler, Irrtümer und Änderungen vorbehalten.</p>
+                     </div>
+                  </details>
+                  <details class="menu-item">
+                     <summary class="menu-item__summary">
+                        <span class="menu-item__name">Strawberry Milk Tea 0,5l</span>
+                        <span class="menu-item__price">6,50 €</span>
+                     </summary>
+                     <div class="menu-item__body">
+                        <h3 class="menu-item__subtitle">Stoffe oder Erzeugnisse, die Allergien oder Intoleranzen auslösen</h3>
+                        <ul class="menu-item__list">
+                           <li>Enthält Koffein</li>
+                           <li>Mit Farbstoff</li>
+                        </ul>
+                        <h3 class="menu-item__subtitle">Allergene</h3>
+                        <ul class="menu-item__list">
+                           <li>Enthält Milch/-Erzeugnisse (laktosehaltig)</li>
+                        </ul>
+                        <p class="menu-item__disclaimer">Druckfehler, Irrtümer und Änderungen vorbehalten.</p>
+                     </div>
+                  </details>
+                  <details class="menu-item">
+                     <summary class="menu-item__summary">
+                        <span class="menu-item__name">QQ Classic Black Milk Tea 0,5l</span>
+                        <span class="menu-item__price">6,50 €</span>
+                     </summary>
+                     <div class="menu-item__body">
+                        <h3 class="menu-item__subtitle">Stoffe oder Erzeugnisse, die Allergien oder Intoleranzen auslösen</h3>
+                        <ul class="menu-item__list">
+                           <li>Enthält Koffein</li>
+                        </ul>
+                        <h3 class="menu-item__subtitle">Allergene</h3>
+                        <ul class="menu-item__list">
+                           <li>Enthält Milch/-Erzeugnisse (laktosehaltig)</li>
+                        </ul>
+                        <p class="menu-item__disclaimer">Druckfehler, Irrtümer und Änderungen vorbehalten.</p>
+                     </div>
+                  </details>
+                  <details class="menu-item">
+                     <summary class="menu-item__summary">
+                        <span class="menu-item__name">Jasmin Green Milk Tea 0,7l</span>
+                        <span class="menu-item__price">7,00 €</span>
+                     </summary>
+                     <div class="menu-item__body">
+                        <h3 class="menu-item__subtitle">Stoffe oder Erzeugnisse, die Allergien oder Intoleranzen auslösen</h3>
+                        <ul class="menu-item__list">
+                           <li>Enthält Koffein</li>
+                           <li>Mit Farbstoff</li>
+                        </ul>
+                        <h3 class="menu-item__subtitle">Allergene</h3>
+                        <ul class="menu-item__list">
+                           <li>Enthält Milch/-Erzeugnisse (laktosehaltig)</li>
+                        </ul>
+                        <p class="menu-item__disclaimer">Druckfehler, Irrtümer und Änderungen vorbehalten.</p>
+                     </div>
+                  </details>
             </div>
-
-            <div class="home__card">
-               <h3 class="home__card-title">Idee entwickeln</h3>
-               <p class="home__card-text">Du hast eine Idee? Wir helfen dir, sie zu prüfen, ein Konzept zu entwickeln und erste Prototypen zu testen.</p>
-               <a href="Angebote/Sprechstunde-fuer-deine-Ideen.html" class="home__card-link">
-                  <img src="assets/icons/idea.png" alt="Idee entwickeln" class="home__card-image">
-               </a>
+         </section>
+         <section class="menu-category" id="latte">
+            <h2 class="menu-category__title">Latte</h2>
+            <p class="menu-category__note">Alle Getränke werden mit einem Topping Ihrer Wahl zubereitet.</p>
+            <div class="menu-category__items">
+                  <details class="menu-item">
+                     <summary class="menu-item__summary">
+                        <span class="menu-item__name">Matcha Latte 0,5l</span>
+                        <span class="menu-item__price">6,50 €</span>
+                     </summary>
+                     <div class="menu-item__body">
+                        <h3 class="menu-item__subtitle">Stoffe oder Erzeugnisse, die Allergien oder Intoleranzen auslösen</h3>
+                        <ul class="menu-item__list">
+                           <li>Enthält Koffein</li>
+                        </ul>
+                        <h3 class="menu-item__subtitle">Allergene</h3>
+                        <ul class="menu-item__list">
+                           <li>Enthält Milch/-Erzeugnisse (laktosehaltig)</li>
+                        </ul>
+                        <p class="menu-item__disclaimer">Druckfehler, Irrtümer und Änderungen vorbehalten.</p>
+                     </div>
+                  </details>
+                  <details class="menu-item">
+                     <summary class="menu-item__summary">
+                        <span class="menu-item__name">Taro Latte 0,7l</span>
+                        <span class="menu-item__price">7,00 €</span>
+                     </summary>
+                     <div class="menu-item__body">
+                        <h3 class="menu-item__subtitle">Stoffe oder Erzeugnisse, die Allergien oder Intoleranzen auslösen</h3>
+                        <ul class="menu-item__list">
+                           <li>Enthält Koffein</li>
+                           <li>Mit Farbstoff</li>
+                        </ul>
+                        <h3 class="menu-item__subtitle">Allergene</h3>
+                        <ul class="menu-item__list">
+                           <li>Enthält Milch/-Erzeugnisse (laktosehaltig)</li>
+                        </ul>
+                        <p class="menu-item__disclaimer">Druckfehler, Irrtümer und Änderungen vorbehalten.</p>
+                     </div>
+                  </details>
+                  <details class="menu-item">
+                     <summary class="menu-item__summary">
+                        <span class="menu-item__name">Taro Coconut Latte 0,7l</span>
+                        <span class="menu-item__price">7,00 €</span>
+                     </summary>
+                     <div class="menu-item__body">
+                        <h3 class="menu-item__subtitle">Stoffe oder Erzeugnisse, die Allergien oder Intoleranzen auslösen</h3>
+                        <ul class="menu-item__list">
+                           <li>Mit Konservierungsstoffen</li>
+                           <li>Enthält Koffein</li>
+                           <li>Mit Farbstoff</li>
+                        </ul>
+                        <h3 class="menu-item__subtitle">Allergene</h3>
+                        <ul class="menu-item__list">
+                           <li>Enthält Milch/-Erzeugnisse (laktosehaltig)</li>
+                        </ul>
+                        <p class="menu-item__disclaimer">Druckfehler, Irrtümer und Änderungen vorbehalten.</p>
+                     </div>
+                  </details>
+                  <details class="menu-item">
+                     <summary class="menu-item__summary">
+                        <span class="menu-item__name">Matcha Latte 0,7l</span>
+                        <span class="menu-item__price">7,00 €</span>
+                     </summary>
+                     <div class="menu-item__body">
+                        <h3 class="menu-item__subtitle">Stoffe oder Erzeugnisse, die Allergien oder Intoleranzen auslösen</h3>
+                        <ul class="menu-item__list">
+                           <li>Enthält Koffein</li>
+                        </ul>
+                        <h3 class="menu-item__subtitle">Allergene</h3>
+                        <ul class="menu-item__list">
+                           <li>Enthält Milch/-Erzeugnisse (laktosehaltig)</li>
+                        </ul>
+                        <p class="menu-item__disclaimer">Druckfehler, Irrtümer und Änderungen vorbehalten.</p>
+                     </div>
+                  </details>
+                  <details class="menu-item">
+                     <summary class="menu-item__summary">
+                        <span class="menu-item__name">Coconut Latte 0,7l</span>
+                        <span class="menu-item__price">7,00 €</span>
+                     </summary>
+                     <div class="menu-item__body">
+                        <h3 class="menu-item__subtitle">Stoffe oder Erzeugnisse, die Allergien oder Intoleranzen auslösen</h3>
+                        <ul class="menu-item__list">
+                           <li>Mit Konservierungsstoffen</li>
+                           <li>Enthält Koffein</li>
+                        </ul>
+                        <h3 class="menu-item__subtitle">Allergene</h3>
+                        <ul class="menu-item__list">
+                           <li>Enthält Milch/-Erzeugnisse (laktosehaltig)</li>
+                        </ul>
+                        <p class="menu-item__disclaimer">Druckfehler, Irrtümer und Änderungen vorbehalten.</p>
+                     </div>
+                  </details>
+                  <details class="menu-item">
+                     <summary class="menu-item__summary">
+                        <span class="menu-item__name">Taro Latte 0,5l</span>
+                        <span class="menu-item__price">6,50 €</span>
+                     </summary>
+                     <div class="menu-item__body">
+                        <h3 class="menu-item__subtitle">Stoffe oder Erzeugnisse, die Allergien oder Intoleranzen auslösen</h3>
+                        <ul class="menu-item__list">
+                           <li>Enthält Koffein</li>
+                           <li>Mit Farbstoff</li>
+                        </ul>
+                        <h3 class="menu-item__subtitle">Allergene</h3>
+                        <ul class="menu-item__list">
+                           <li>Enthält Milch/-Erzeugnisse (laktosehaltig)</li>
+                        </ul>
+                        <p class="menu-item__disclaimer">Druckfehler, Irrtümer und Änderungen vorbehalten.</p>
+                     </div>
+                  </details>
+                  <details class="menu-item">
+                     <summary class="menu-item__summary">
+                        <span class="menu-item__name">Matcha Mango Latte 0,7l</span>
+                        <span class="menu-item__price">7,00 €</span>
+                     </summary>
+                     <div class="menu-item__body">
+                        <h3 class="menu-item__subtitle">Stoffe oder Erzeugnisse, die Allergien oder Intoleranzen auslösen</h3>
+                        <ul class="menu-item__list">
+                           <li>Mit Konservierungsstoffen</li>
+                           <li>Mit Süßungsmittel(n)</li>
+                           <li>Enthält Koffein</li>
+                           <li>Mit Farbstoff</li>
+                        </ul>
+                        <h3 class="menu-item__subtitle">Allergene</h3>
+                        <ul class="menu-item__list">
+                           <li>Enthält Milch/-Erzeugnisse (laktosehaltig)</li>
+                        </ul>
+                        <p class="menu-item__disclaimer">Druckfehler, Irrtümer und Änderungen vorbehalten.</p>
+                     </div>
+                  </details>
+                  <details class="menu-item">
+                     <summary class="menu-item__summary">
+                        <span class="menu-item__name">Matcha Mango Latte 0,5l</span>
+                        <span class="menu-item__price">6,50 €</span>
+                     </summary>
+                     <div class="menu-item__body">
+                        <h3 class="menu-item__subtitle">Stoffe oder Erzeugnisse, die Allergien oder Intoleranzen auslösen</h3>
+                        <ul class="menu-item__list">
+                           <li>Mit Konservierungsstoffen</li>
+                           <li>Mit Süßungsmittel(n)</li>
+                           <li>Enthält Koffein</li>
+                           <li>Mit Farbstoff</li>
+                        </ul>
+                        <h3 class="menu-item__subtitle">Allergene</h3>
+                        <ul class="menu-item__list">
+                           <li>Enthält Milch/-Erzeugnisse (laktosehaltig)</li>
+                        </ul>
+                        <p class="menu-item__disclaimer">Druckfehler, Irrtümer und Änderungen vorbehalten.</p>
+                     </div>
+                  </details>
+                  <details class="menu-item">
+                     <summary class="menu-item__summary">
+                        <span class="menu-item__name">Oreo Latte 0,7l</span>
+                        <span class="menu-item__price">7,00 €</span>
+                     </summary>
+                     <div class="menu-item__body">
+                        <h3 class="menu-item__subtitle">Stoffe oder Erzeugnisse, die Allergien oder Intoleranzen auslösen</h3>
+                        <ul class="menu-item__list">
+                           <li>Enthält Koffein</li>
+                        </ul>
+                        <h3 class="menu-item__subtitle">Allergene</h3>
+                        <ul class="menu-item__list">
+                           <li>Enthält Milch/-Erzeugnisse (laktosehaltig)</li>
+                        </ul>
+                        <p class="menu-item__disclaimer">Druckfehler, Irrtümer und Änderungen vorbehalten.</p>
+                     </div>
+                  </details>
+                  <details class="menu-item">
+                     <summary class="menu-item__summary">
+                        <span class="menu-item__name">Oreo Latte 0,5l</span>
+                        <span class="menu-item__price">6,50 €</span>
+                     </summary>
+                     <div class="menu-item__body">
+                        <h3 class="menu-item__subtitle">Stoffe oder Erzeugnisse, die Allergien oder Intoleranzen auslösen</h3>
+                        <ul class="menu-item__list">
+                           <li>Enthält Koffein</li>
+                        </ul>
+                        <h3 class="menu-item__subtitle">Allergene</h3>
+                        <ul class="menu-item__list">
+                           <li>Enthält Milch/-Erzeugnisse (laktosehaltig)</li>
+                        </ul>
+                        <p class="menu-item__disclaimer">Druckfehler, Irrtümer und Änderungen vorbehalten.</p>
+                     </div>
+                  </details>
+                  <details class="menu-item">
+                     <summary class="menu-item__summary">
+                        <span class="menu-item__name">Taro Coconut Latte 0,5l</span>
+                        <span class="menu-item__price">6,50 €</span>
+                     </summary>
+                     <div class="menu-item__body">
+                        <h3 class="menu-item__subtitle">Stoffe oder Erzeugnisse, die Allergien oder Intoleranzen auslösen</h3>
+                        <ul class="menu-item__list">
+                           <li>Mit Konservierungsstoffen</li>
+                           <li>Enthält Koffein</li>
+                           <li>Mit Farbstoff</li>
+                        </ul>
+                        <h3 class="menu-item__subtitle">Allergene</h3>
+                        <ul class="menu-item__list">
+                           <li>Enthält Milch/-Erzeugnisse (laktosehaltig)</li>
+                        </ul>
+                        <p class="menu-item__disclaimer">Druckfehler, Irrtümer und Änderungen vorbehalten.</p>
+                     </div>
+                  </details>
+                  <details class="menu-item">
+                     <summary class="menu-item__summary">
+                        <span class="menu-item__name">Coconut Latte 0,5l</span>
+                        <span class="menu-item__price">6,50 €</span>
+                     </summary>
+                     <div class="menu-item__body">
+                        <h3 class="menu-item__subtitle">Stoffe oder Erzeugnisse, die Allergien oder Intoleranzen auslösen</h3>
+                        <ul class="menu-item__list">
+                           <li>Mit Konservierungsstoffen</li>
+                           <li>Enthält Koffein</li>
+                        </ul>
+                        <h3 class="menu-item__subtitle">Allergene</h3>
+                        <ul class="menu-item__list">
+                           <li>Enthält Milch/-Erzeugnisse (laktosehaltig)</li>
+                        </ul>
+                        <p class="menu-item__disclaimer">Druckfehler, Irrtümer und Änderungen vorbehalten.</p>
+                     </div>
+                  </details>
             </div>
-
-            <div class="home__card">
-               <h3 class="home__card-title">Startup gründen</h3>
-               <p class="home__card-text">Du willst aus deiner Idee ein Startup machen? Wir begleiten dich bei Geschäftsmodell, Teamaufbau und Fördermöglichkeiten.</p>
-               <a href="Angebote/Inkubator.html" class="home__card-link">
-                  <img src="assets/icons/rocket-launch.png" alt="Startup gründen" class="home__card-image">
-               </a>
+         </section>
+         <section class="menu-category" id="flavored-tea">
+            <h2 class="menu-category__title">Flavored Tea</h2>
+            <p class="menu-category__note">Alle Getränke werden mit einem Topping Ihrer Wahl und schwarzem Tee zubereitet.</p>
+            <div class="menu-category__items">
+                  <details class="menu-item">
+                     <summary class="menu-item__summary">
+                        <span class="menu-item__name">Maracuja Tea 0,7l</span>
+                        <span class="menu-item__price">6,50 €</span>
+                     </summary>
+                     <div class="menu-item__body">
+                        <h3 class="menu-item__subtitle">Stoffe oder Erzeugnisse, die Allergien oder Intoleranzen auslösen</h3>
+                        <ul class="menu-item__list">
+                           <li>Enthält Koffein</li>
+                           <li>Mit Farbstoff</li>
+                        </ul>
+                        <h3 class="menu-item__subtitle">Allergene</h3>
+                        <ul class="menu-item__list"></ul>
+                        <p class="menu-item__disclaimer">Druckfehler, Irrtümer und Änderungen vorbehalten.</p>
+                     </div>
+                  </details>
+                  <details class="menu-item">
+                     <summary class="menu-item__summary">
+                        <span class="menu-item__name">Apple Tea 0,7l</span>
+                        <span class="menu-item__price">6,50 €</span>
+                     </summary>
+                     <div class="menu-item__body">
+                        <h3 class="menu-item__subtitle">Stoffe oder Erzeugnisse, die Allergien oder Intoleranzen auslösen</h3>
+                        <ul class="menu-item__list">
+                           <li>Mit Konservierungsstoffen</li>
+                           <li>Enthält Koffein</li>
+                           <li>Mit Farbstoff</li>
+                        </ul>
+                        <h3 class="menu-item__subtitle">Allergene</h3>
+                        <ul class="menu-item__list"></ul>
+                        <p class="menu-item__disclaimer">Druckfehler, Irrtümer und Änderungen vorbehalten.</p>
+                     </div>
+                  </details>
+                  <details class="menu-item">
+                     <summary class="menu-item__summary">
+                        <span class="menu-item__name">Peach Tea 0,5l</span>
+                        <span class="menu-item__price">6,00 €</span>
+                     </summary>
+                     <div class="menu-item__body">
+                        <h3 class="menu-item__subtitle">Stoffe oder Erzeugnisse, die Allergien oder Intoleranzen auslösen</h3>
+                        <ul class="menu-item__list">
+                           <li>Enthält Koffein</li>
+                           <li>Mit Farbstoff</li>
+                        </ul>
+                        <h3 class="menu-item__subtitle">Allergene</h3>
+                        <ul class="menu-item__list"></ul>
+                        <p class="menu-item__disclaimer">Druckfehler, Irrtümer und Änderungen vorbehalten.</p>
+                     </div>
+                  </details>
+                  <details class="menu-item">
+                     <summary class="menu-item__summary">
+                        <span class="menu-item__name">Strawberry Tea 0,5l</span>
+                        <span class="menu-item__price">6,00 €</span>
+                     </summary>
+                     <div class="menu-item__body">
+                        <h3 class="menu-item__subtitle">Stoffe oder Erzeugnisse, die Allergien oder Intoleranzen auslösen</h3>
+                        <ul class="menu-item__list">
+                           <li>Enthält Koffein</li>
+                           <li>Mit Farbstoff</li>
+                        </ul>
+                        <h3 class="menu-item__subtitle">Allergene</h3>
+                        <ul class="menu-item__list"></ul>
+                        <p class="menu-item__disclaimer">Druckfehler, Irrtümer und Änderungen vorbehalten.</p>
+                     </div>
+                  </details>
+                  <details class="menu-item">
+                     <summary class="menu-item__summary">
+                        <span class="menu-item__name">Strawberry Tea 0,7l</span>
+                        <span class="menu-item__price">6,50 €</span>
+                     </summary>
+                     <div class="menu-item__body">
+                        <h3 class="menu-item__subtitle">Stoffe oder Erzeugnisse, die Allergien oder Intoleranzen auslösen</h3>
+                        <ul class="menu-item__list">
+                           <li>Enthält Koffein</li>
+                           <li>Mit Farbstoff</li>
+                        </ul>
+                        <h3 class="menu-item__subtitle">Allergene</h3>
+                        <ul class="menu-item__list"></ul>
+                        <p class="menu-item__disclaimer">Druckfehler, Irrtümer und Änderungen vorbehalten.</p>
+                     </div>
+                  </details>
+                  <details class="menu-item">
+                     <summary class="menu-item__summary">
+                        <span class="menu-item__name">Lychee Tea 0,7l</span>
+                        <span class="menu-item__price">6,50 €</span>
+                     </summary>
+                     <div class="menu-item__body">
+                        <h3 class="menu-item__subtitle">Stoffe oder Erzeugnisse, die Allergien oder Intoleranzen auslösen</h3>
+                        <ul class="menu-item__list">
+                           <li>Enthält Koffein</li>
+                        </ul>
+                        <h3 class="menu-item__subtitle">Allergene</h3>
+                        <ul class="menu-item__list"></ul>
+                        <p class="menu-item__disclaimer">Druckfehler, Irrtümer und Änderungen vorbehalten.</p>
+                     </div>
+                  </details>
+                  <details class="menu-item">
+                     <summary class="menu-item__summary">
+                        <span class="menu-item__name">Lychee Tea 0,5l</span>
+                        <span class="menu-item__price">6,00 €</span>
+                     </summary>
+                     <div class="menu-item__body">
+                        <h3 class="menu-item__subtitle">Stoffe oder Erzeugnisse, die Allergien oder Intoleranzen auslösen</h3>
+                        <ul class="menu-item__list">
+                           <li>Enthält Koffein</li>
+                        </ul>
+                        <h3 class="menu-item__subtitle">Allergene</h3>
+                        <ul class="menu-item__list"></ul>
+                        <p class="menu-item__disclaimer">Druckfehler, Irrtümer und Änderungen vorbehalten.</p>
+                     </div>
+                  </details>
+                  <details class="menu-item">
+                     <summary class="menu-item__summary">
+                        <span class="menu-item__name">Mango Tea 0,5l</span>
+                        <span class="menu-item__price">6,00 €</span>
+                     </summary>
+                     <div class="menu-item__body">
+                        <h3 class="menu-item__subtitle">Stoffe oder Erzeugnisse, die Allergien oder Intoleranzen auslösen</h3>
+                        <ul class="menu-item__list">
+                           <li>Mit Konservierungsstoffen</li>
+                           <li>Mit Süßungsmittel(n)</li>
+                           <li>Enthält Koffein</li>
+                        </ul>
+                        <h3 class="menu-item__subtitle">Allergene</h3>
+                        <ul class="menu-item__list"></ul>
+                        <p class="menu-item__disclaimer">Druckfehler, Irrtümer und Änderungen vorbehalten.</p>
+                     </div>
+                  </details>
+                  <details class="menu-item">
+                     <summary class="menu-item__summary">
+                        <span class="menu-item__name">Mango Tea 0,7l</span>
+                        <span class="menu-item__price">6,50 €</span>
+                     </summary>
+                     <div class="menu-item__body">
+                        <h3 class="menu-item__subtitle">Stoffe oder Erzeugnisse, die Allergien oder Intoleranzen auslösen</h3>
+                        <ul class="menu-item__list">
+                           <li>Mit Konservierungsstoffen</li>
+                           <li>Mit Süßungsmittel(n)</li>
+                           <li>Enthält Koffein</li>
+                        </ul>
+                        <h3 class="menu-item__subtitle">Allergene</h3>
+                        <ul class="menu-item__list"></ul>
+                        <p class="menu-item__disclaimer">Druckfehler, Irrtümer und Änderungen vorbehalten.</p>
+                     </div>
+                  </details>
+                  <details class="menu-item">
+                     <summary class="menu-item__summary">
+                        <span class="menu-item__name">Maracuja Tea 0,5l</span>
+                        <span class="menu-item__price">6,00 €</span>
+                     </summary>
+                     <div class="menu-item__body">
+                        <h3 class="menu-item__subtitle">Stoffe oder Erzeugnisse, die Allergien oder Intoleranzen auslösen</h3>
+                        <ul class="menu-item__list">
+                           <li>Enthält Koffein</li>
+                           <li>Mit Farbstoff</li>
+                        </ul>
+                        <h3 class="menu-item__subtitle">Allergene</h3>
+                        <ul class="menu-item__list"></ul>
+                        <p class="menu-item__disclaimer">Druckfehler, Irrtümer und Änderungen vorbehalten.</p>
+                     </div>
+                  </details>
+                  <details class="menu-item">
+                     <summary class="menu-item__summary">
+                        <span class="menu-item__name">Peach Tea 0,7l</span>
+                        <span class="menu-item__price">6,50 €</span>
+                     </summary>
+                     <div class="menu-item__body">
+                        <h3 class="menu-item__subtitle">Stoffe oder Erzeugnisse, die Allergien oder Intoleranzen auslösen</h3>
+                        <ul class="menu-item__list">
+                           <li>Enthält Koffein</li>
+                           <li>Mit Farbstoff</li>
+                        </ul>
+                        <h3 class="menu-item__subtitle">Allergene</h3>
+                        <ul class="menu-item__list"></ul>
+                        <p class="menu-item__disclaimer">Druckfehler, Irrtümer und Änderungen vorbehalten.</p>
+                     </div>
+                  </details>
+                  <details class="menu-item">
+                     <summary class="menu-item__summary">
+                        <span class="menu-item__name">Apple Tea 0,5l</span>
+                        <span class="menu-item__price">6,00 €</span>
+                     </summary>
+                     <div class="menu-item__body">
+                        <h3 class="menu-item__subtitle">Stoffe oder Erzeugnisse, die Allergien oder Intoleranzen auslösen</h3>
+                        <ul class="menu-item__list">
+                           <li>Mit Konservierungsstoffen</li>
+                           <li>Enthält Koffein</li>
+                           <li>Mit Farbstoff</li>
+                        </ul>
+                        <h3 class="menu-item__subtitle">Allergene</h3>
+                        <ul class="menu-item__list"></ul>
+                        <p class="menu-item__disclaimer">Druckfehler, Irrtümer und Änderungen vorbehalten.</p>
+                     </div>
+                  </details>
+                  <details class="menu-item">
+                     <summary class="menu-item__summary">
+                        <span class="menu-item__name">Watermelon Tea 0,7l</span>
+                        <span class="menu-item__price">6,50 €</span>
+                     </summary>
+                     <div class="menu-item__body">
+                        <h3 class="menu-item__subtitle">Stoffe oder Erzeugnisse, die Allergien oder Intoleranzen auslösen</h3>
+                        <ul class="menu-item__list">
+                           <li>Mit Konservierungsstoffen</li>
+                           <li>Mit Süßungsmittel(n)</li>
+                           <li>Enthält Koffein</li>
+                           <li>Mit Farbstoff</li>
+                        </ul>
+                        <h3 class="menu-item__subtitle">Allergene</h3>
+                        <ul class="menu-item__list"></ul>
+                        <p class="menu-item__disclaimer">Druckfehler, Irrtümer und Änderungen vorbehalten.</p>
+                     </div>
+                  </details>
+                  <details class="menu-item">
+                     <summary class="menu-item__summary">
+                        <span class="menu-item__name">Blueberry Tea 0,5l</span>
+                        <span class="menu-item__price">6,00 €</span>
+                     </summary>
+                     <div class="menu-item__body">
+                        <h3 class="menu-item__subtitle">Stoffe oder Erzeugnisse, die Allergien oder Intoleranzen auslösen</h3>
+                        <ul class="menu-item__list">
+                           <li>Enthält Koffein</li>
+                           <li>Mit Farbstoff</li>
+                        </ul>
+                        <h3 class="menu-item__subtitle">Allergene</h3>
+                        <ul class="menu-item__list"></ul>
+                        <p class="menu-item__disclaimer">Druckfehler, Irrtümer und Änderungen vorbehalten.</p>
+                     </div>
+                  </details>
+                  <details class="menu-item">
+                     <summary class="menu-item__summary">
+                        <span class="menu-item__name">Blueberry Tea 0,7l</span>
+                        <span class="menu-item__price">6,50 €</span>
+                     </summary>
+                     <div class="menu-item__body">
+                        <h3 class="menu-item__subtitle">Stoffe oder Erzeugnisse, die Allergien oder Intoleranzen auslösen</h3>
+                        <ul class="menu-item__list">
+                           <li>Enthält Koffein</li>
+                           <li>Mit Farbstoff</li>
+                        </ul>
+                        <h3 class="menu-item__subtitle">Allergene</h3>
+                        <ul class="menu-item__list"></ul>
+                        <p class="menu-item__disclaimer">Druckfehler, Irrtümer und Änderungen vorbehalten.</p>
+                     </div>
+                  </details>
+                  <details class="menu-item">
+                     <summary class="menu-item__summary">
+                        <span class="menu-item__name">Watermelon Tea 0,5l</span>
+                        <span class="menu-item__price">6,00 €</span>
+                     </summary>
+                     <div class="menu-item__body">
+                        <h3 class="menu-item__subtitle">Stoffe oder Erzeugnisse, die Allergien oder Intoleranzen auslösen</h3>
+                        <ul class="menu-item__list">
+                           <li>Mit Konservierungsstoffen</li>
+                           <li>Mit Süßungsmittel(n)</li>
+                           <li>Enthält Koffein</li>
+                           <li>Mit Farbstoff</li>
+                        </ul>
+                        <h3 class="menu-item__subtitle">Allergene</h3>
+                        <ul class="menu-item__list"></ul>
+                        <p class="menu-item__disclaimer">Druckfehler, Irrtümer und Änderungen vorbehalten.</p>
+                     </div>
+                  </details>
+                  <details class="menu-item">
+                     <summary class="menu-item__summary">
+                        <span class="menu-item__name">Pomegranate Tea 0,5l</span>
+                        <span class="menu-item__price">6,00 €</span>
+                     </summary>
+                     <div class="menu-item__body">
+                        <h3 class="menu-item__subtitle">Stoffe oder Erzeugnisse, die Allergien oder Intoleranzen auslösen</h3>
+                        <ul class="menu-item__list">
+                           <li>Mit Konservierungsstoffen</li>
+                           <li>Enthält Koffein</li>
+                           <li>Mit Farbstoff</li>
+                        </ul>
+                        <h3 class="menu-item__subtitle">Allergene</h3>
+                        <ul class="menu-item__list"></ul>
+                        <p class="menu-item__disclaimer">Druckfehler, Irrtümer und Änderungen vorbehalten.</p>
+                     </div>
+                  </details>
+                  <details class="menu-item">
+                     <summary class="menu-item__summary">
+                        <span class="menu-item__name">Kumquat Lemon Tea 0,7l</span>
+                        <span class="menu-item__price">6,50 €</span>
+                     </summary>
+                     <div class="menu-item__body">
+                        <h3 class="menu-item__subtitle">Stoffe oder Erzeugnisse, die Allergien oder Intoleranzen auslösen</h3>
+                        <ul class="menu-item__list">
+                           <li>Enthält Koffein</li>
+                           <li>Mit Farbstoff</li>
+                        </ul>
+                        <h3 class="menu-item__subtitle">Allergene</h3>
+                        <ul class="menu-item__list"></ul>
+                        <p class="menu-item__disclaimer">Druckfehler, Irrtümer und Änderungen vorbehalten.</p>
+                     </div>
+                  </details>
+                  <details class="menu-item">
+                     <summary class="menu-item__summary">
+                        <span class="menu-item__name">Pomegranate Tea 0,7l</span>
+                        <span class="menu-item__price">6,50 €</span>
+                     </summary>
+                     <div class="menu-item__body">
+                        <h3 class="menu-item__subtitle">Stoffe oder Erzeugnisse, die Allergien oder Intoleranzen auslösen</h3>
+                        <ul class="menu-item__list">
+                           <li>Mit Konservierungsstoffen</li>
+                           <li>Enthält Koffein</li>
+                           <li>Mit Farbstoff</li>
+                        </ul>
+                        <h3 class="menu-item__subtitle">Allergene</h3>
+                        <ul class="menu-item__list"></ul>
+                        <p class="menu-item__disclaimer">Druckfehler, Irrtümer und Änderungen vorbehalten.</p>
+                     </div>
+                  </details>
+                  <details class="menu-item">
+                     <summary class="menu-item__summary">
+                        <span class="menu-item__name">Kumquat Lemon Tea 0,5l</span>
+                        <span class="menu-item__price">6,00 €</span>
+                     </summary>
+                     <div class="menu-item__body">
+                        <h3 class="menu-item__subtitle">Stoffe oder Erzeugnisse, die Allergien oder Intoleranzen auslösen</h3>
+                        <ul class="menu-item__list">
+                           <li>Enthält Koffein</li>
+                           <li>Mit Farbstoff</li>
+                        </ul>
+                        <h3 class="menu-item__subtitle">Allergene</h3>
+                        <ul class="menu-item__list"></ul>
+                        <p class="menu-item__disclaimer">Druckfehler, Irrtümer und Änderungen vorbehalten.</p>
+                     </div>
+                  </details>
             </div>
-         </div>
+         </section>
+         <section class="menu-category" id="flavored-yoghurt">
+            <h2 class="menu-category__title">Flavored Yoghurt</h2>
+            <p class="menu-category__note">Alle Getränke werden mit einem Topping Ihrer Wahl zubereitet.</p>
+            <div class="menu-category__items">
+                  <details class="menu-item">
+                     <summary class="menu-item__summary">
+                        <span class="menu-item__name">Pomegranate Yogurt 0,5l</span>
+                        <span class="menu-item__price">6,50 €</span>
+                     </summary>
+                     <div class="menu-item__body">
+                        <h3 class="menu-item__subtitle">Stoffe oder Erzeugnisse, die Allergien oder Intoleranzen auslösen</h3>
+                        <ul class="menu-item__list">
+                           <li>Mit Konservierungsstoffen</li>
+                           <li>Mit Farbstoff</li>
+                        </ul>
+                        <h3 class="menu-item__subtitle">Allergene</h3>
+                        <ul class="menu-item__list">
+                           <li>Enthält Milch/-Erzeugnisse (laktosehaltig)</li>
+                        </ul>
+                        <p class="menu-item__disclaimer">Druckfehler, Irrtümer und Änderungen vorbehalten.</p>
+                     </div>
+                  </details>
+                  <details class="menu-item">
+                     <summary class="menu-item__summary">
+                        <span class="menu-item__name">Strawberry Yogurt 0,7l</span>
+                        <span class="menu-item__price">7,00 €</span>
+                     </summary>
+                     <div class="menu-item__body">
+                        <h3 class="menu-item__subtitle">Stoffe oder Erzeugnisse, die Allergien oder Intoleranzen auslösen</h3>
+                        <ul class="menu-item__list">
+                           <li>Mit Farbstoff</li>
+                        </ul>
+                        <h3 class="menu-item__subtitle">Allergene</h3>
+                        <ul class="menu-item__list">
+                           <li>Enthält Milch/-Erzeugnisse (laktosehaltig)</li>
+                        </ul>
+                        <p class="menu-item__disclaimer">Druckfehler, Irrtümer und Änderungen vorbehalten.</p>
+                     </div>
+                  </details>
+                  <details class="menu-item">
+                     <summary class="menu-item__summary">
+                        <span class="menu-item__name">Mango Yogurt 0,5l</span>
+                        <span class="menu-item__price">6,50 €</span>
+                     </summary>
+                     <div class="menu-item__body">
+                        <h3 class="menu-item__subtitle">Stoffe oder Erzeugnisse, die Allergien oder Intoleranzen auslösen</h3>
+                        <ul class="menu-item__list">
+                           <li>Mit Konservierungsstoffen</li>
+                           <li>Mit Süßungsmittel(n)</li>
+                        </ul>
+                        <h3 class="menu-item__subtitle">Allergene</h3>
+                        <ul class="menu-item__list">
+                           <li>Enthält Milch/-Erzeugnisse (laktosehaltig)</li>
+                        </ul>
+                        <p class="menu-item__disclaimer">Druckfehler, Irrtümer und Änderungen vorbehalten.</p>
+                     </div>
+                  </details>
+                  <details class="menu-item">
+                     <summary class="menu-item__summary">
+                        <span class="menu-item__name">Strawberry Yogurt 0,5l</span>
+                        <span class="menu-item__price">6,50 €</span>
+                     </summary>
+                     <div class="menu-item__body">
+                        <h3 class="menu-item__subtitle">Stoffe oder Erzeugnisse, die Allergien oder Intoleranzen auslösen</h3>
+                        <ul class="menu-item__list">
+                           <li>Mit Farbstoff</li>
+                        </ul>
+                        <h3 class="menu-item__subtitle">Allergene</h3>
+                        <ul class="menu-item__list">
+                           <li>Enthält Milch/-Erzeugnisse (laktosehaltig)</li>
+                        </ul>
+                        <p class="menu-item__disclaimer">Druckfehler, Irrtümer und Änderungen vorbehalten.</p>
+                     </div>
+                  </details>
+                  <details class="menu-item">
+                     <summary class="menu-item__summary">
+                        <span class="menu-item__name">Mango Yogurt 0,7l</span>
+                        <span class="menu-item__price">7,00 €</span>
+                     </summary>
+                     <div class="menu-item__body">
+                        <h3 class="menu-item__subtitle">Stoffe oder Erzeugnisse, die Allergien oder Intoleranzen auslösen</h3>
+                        <ul class="menu-item__list">
+                           <li>Mit Konservierungsstoffen</li>
+                           <li>Mit Süßungsmittel(n)</li>
+                        </ul>
+                        <h3 class="menu-item__subtitle">Allergene</h3>
+                        <ul class="menu-item__list">
+                           <li>Enthält Milch/-Erzeugnisse (laktosehaltig)</li>
+                        </ul>
+                        <p class="menu-item__disclaimer">Druckfehler, Irrtümer und Änderungen vorbehalten.</p>
+                     </div>
+                  </details>
+                  <details class="menu-item">
+                     <summary class="menu-item__summary">
+                        <span class="menu-item__name">Peach Yogurt 0,5l</span>
+                        <span class="menu-item__price">6,50 €</span>
+                     </summary>
+                     <div class="menu-item__body">
+                        <h3 class="menu-item__subtitle">Stoffe oder Erzeugnisse, die Allergien oder Intoleranzen auslösen</h3>
+                        <ul class="menu-item__list">
+                           <li>Mit Farbstoff</li>
+                        </ul>
+                        <h3 class="menu-item__subtitle">Allergene</h3>
+                        <ul class="menu-item__list">
+                           <li>Enthält Milch/-Erzeugnisse (laktosehaltig)</li>
+                        </ul>
+                        <p class="menu-item__disclaimer">Druckfehler, Irrtümer und Änderungen vorbehalten.</p>
+                     </div>
+                  </details>
+                  <details class="menu-item">
+                     <summary class="menu-item__summary">
+                        <span class="menu-item__name">Peach Yogurt 0,7l</span>
+                        <span class="menu-item__price">7,00 €</span>
+                     </summary>
+                     <div class="menu-item__body">
+                        <h3 class="menu-item__subtitle">Stoffe oder Erzeugnisse, die Allergien oder Intoleranzen auslösen</h3>
+                        <ul class="menu-item__list">
+                           <li>Mit Farbstoff</li>
+                        </ul>
+                        <h3 class="menu-item__subtitle">Allergene</h3>
+                        <ul class="menu-item__list">
+                           <li>Enthält Milch/-Erzeugnisse (laktosehaltig)</li>
+                        </ul>
+                        <p class="menu-item__disclaimer">Druckfehler, Irrtümer und Änderungen vorbehalten.</p>
+                     </div>
+                  </details>
+                  <details class="menu-item">
+                     <summary class="menu-item__summary">
+                        <span class="menu-item__name">Maracuja Yogurt 0,5l</span>
+                        <span class="menu-item__price">6,50 €</span>
+                     </summary>
+                     <div class="menu-item__body">
+                        <h3 class="menu-item__subtitle">Stoffe oder Erzeugnisse, die Allergien oder Intoleranzen auslösen</h3>
+                        <ul class="menu-item__list">
+                           <li>Mit Farbstoff</li>
+                        </ul>
+                        <h3 class="menu-item__subtitle">Allergene</h3>
+                        <ul class="menu-item__list">
+                           <li>Enthält Milch/-Erzeugnisse (laktosehaltig)</li>
+                        </ul>
+                        <p class="menu-item__disclaimer">Druckfehler, Irrtümer und Änderungen vorbehalten.</p>
+                     </div>
+                  </details>
+                  <details class="menu-item">
+                     <summary class="menu-item__summary">
+                        <span class="menu-item__name">Pomegranate Yogurt 0,7l</span>
+                        <span class="menu-item__price">7,00 €</span>
+                     </summary>
+                     <div class="menu-item__body">
+                        <h3 class="menu-item__subtitle">Stoffe oder Erzeugnisse, die Allergien oder Intoleranzen auslösen</h3>
+                        <ul class="menu-item__list">
+                           <li>Mit Konservierungsstoffen</li>
+                           <li>Mit Farbstoff</li>
+                        </ul>
+                        <h3 class="menu-item__subtitle">Allergene</h3>
+                        <ul class="menu-item__list">
+                           <li>Enthält Milch/-Erzeugnisse (laktosehaltig)</li>
+                        </ul>
+                        <p class="menu-item__disclaimer">Druckfehler, Irrtümer und Änderungen vorbehalten.</p>
+                     </div>
+                  </details>
+                  <details class="menu-item">
+                     <summary class="menu-item__summary">
+                        <span class="menu-item__name">Kumquat Lemon Yogurt 0,7l</span>
+                        <span class="menu-item__price">7,00 €</span>
+                     </summary>
+                     <div class="menu-item__body">
+                        <h3 class="menu-item__subtitle">Stoffe oder Erzeugnisse, die Allergien oder Intoleranzen auslösen</h3>
+                        <ul class="menu-item__list">
+                           <li>Mit Farbstoff</li>
+                        </ul>
+                        <h3 class="menu-item__subtitle">Allergene</h3>
+                        <ul class="menu-item__list">
+                           <li>Enthält Milch/-Erzeugnisse (laktosehaltig)</li>
+                        </ul>
+                        <p class="menu-item__disclaimer">Druckfehler, Irrtümer und Änderungen vorbehalten.</p>
+                     </div>
+                  </details>
+                  <details class="menu-item">
+                     <summary class="menu-item__summary">
+                        <span class="menu-item__name">Maracuja Yogurt 0,7l</span>
+                        <span class="menu-item__price">7,00 €</span>
+                     </summary>
+                     <div class="menu-item__body">
+                        <h3 class="menu-item__subtitle">Stoffe oder Erzeugnisse, die Allergien oder Intoleranzen auslösen</h3>
+                        <ul class="menu-item__list">
+                           <li>Mit Farbstoff</li>
+                        </ul>
+                        <h3 class="menu-item__subtitle">Allergene</h3>
+                        <ul class="menu-item__list">
+                           <li>Enthält Milch/-Erzeugnisse (laktosehaltig)</li>
+                        </ul>
+                        <p class="menu-item__disclaimer">Druckfehler, Irrtümer und Änderungen vorbehalten.</p>
+                     </div>
+                  </details>
+                  <details class="menu-item">
+                     <summary class="menu-item__summary">
+                        <span class="menu-item__name">Kumquat Lemon Yogurt 0,5l</span>
+                        <span class="menu-item__price">6,50 €</span>
+                     </summary>
+                     <div class="menu-item__body">
+                        <h3 class="menu-item__subtitle">Stoffe oder Erzeugnisse, die Allergien oder Intoleranzen auslösen</h3>
+                        <ul class="menu-item__list">
+                           <li>Mit Farbstoff</li>
+                        </ul>
+                        <h3 class="menu-item__subtitle">Allergene</h3>
+                        <ul class="menu-item__list">
+                           <li>Enthält Milch/-Erzeugnisse (laktosehaltig)</li>
+                        </ul>
+                        <p class="menu-item__disclaimer">Druckfehler, Irrtümer und Änderungen vorbehalten.</p>
+                     </div>
+                  </details>
+                  <details class="menu-item">
+                     <summary class="menu-item__summary">
+                        <span class="menu-item__name">Blueberry Yogurt 0,5l</span>
+                        <span class="menu-item__price">6,50 €</span>
+                     </summary>
+                     <div class="menu-item__body">
+                        <h3 class="menu-item__subtitle">Stoffe oder Erzeugnisse, die Allergien oder Intoleranzen auslösen</h3>
+                        <ul class="menu-item__list">
+                           <li>Mit Farbstoff</li>
+                        </ul>
+                        <h3 class="menu-item__subtitle">Allergene</h3>
+                        <ul class="menu-item__list">
+                           <li>Enthält Milch/-Erzeugnisse (laktosehaltig)</li>
+                        </ul>
+                        <p class="menu-item__disclaimer">Druckfehler, Irrtümer und Änderungen vorbehalten.</p>
+                     </div>
+                  </details>
+                  <details class="menu-item">
+                     <summary class="menu-item__summary">
+                        <span class="menu-item__name">Blueberry Yogurt 0,7l</span>
+                        <span class="menu-item__price">7,00 €</span>
+                     </summary>
+                     <div class="menu-item__body">
+                        <h3 class="menu-item__subtitle">Stoffe oder Erzeugnisse, die Allergien oder Intoleranzen auslösen</h3>
+                        <ul class="menu-item__list">
+                           <li>Mit Farbstoff</li>
+                        </ul>
+                        <h3 class="menu-item__subtitle">Allergene</h3>
+                        <ul class="menu-item__list">
+                           <li>Enthält Milch/-Erzeugnisse (laktosehaltig)</li>
+                        </ul>
+                        <p class="menu-item__disclaimer">Druckfehler, Irrtümer und Änderungen vorbehalten.</p>
+                     </div>
+                  </details>
+                  <details class="menu-item">
+                     <summary class="menu-item__summary">
+                        <span class="menu-item__name">Lychee Yogurt 0,5l</span>
+                        <span class="menu-item__price">6,50 €</span>
+                     </summary>
+                     <div class="menu-item__body">
+                        <h3 class="menu-item__subtitle">Stoffe oder Erzeugnisse, die Allergien oder Intoleranzen auslösen</h3>
+                        <ul class="menu-item__list"></ul>
+                        <h3 class="menu-item__subtitle">Allergene</h3>
+                        <ul class="menu-item__list">
+                           <li>Enthält Milch/-Erzeugnisse (laktosehaltig)</li>
+                        </ul>
+                        <p class="menu-item__disclaimer">Druckfehler, Irrtümer und Änderungen vorbehalten.</p>
+                     </div>
+                  </details>
+                  <details class="menu-item">
+                     <summary class="menu-item__summary">
+                        <span class="menu-item__name">Lychee Yogurt 0,7l</span>
+                        <span class="menu-item__price">7,00 €</span>
+                     </summary>
+                     <div class="menu-item__body">
+                        <h3 class="menu-item__subtitle">Stoffe oder Erzeugnisse, die Allergien oder Intoleranzen auslösen</h3>
+                        <ul class="menu-item__list"></ul>
+                        <h3 class="menu-item__subtitle">Allergene</h3>
+                        <ul class="menu-item__list">
+                           <li>Enthält Milch/-Erzeugnisse (laktosehaltig)</li>
+                        </ul>
+                        <p class="menu-item__disclaimer">Druckfehler, Irrtümer und Änderungen vorbehalten.</p>
+                     </div>
+                  </details>
+            </div>
+         </section>
+         <section class="menu-category" id="juice-soda">
+            <h2 class="menu-category__title">Juice Soda</h2>
+            <p class="menu-category__note">Alle Getränke werden mit einem Topping Ihrer Wahl zubereitet.</p>
+            <div class="menu-category__items">
+                  <details class="menu-item">
+                     <summary class="menu-item__summary">
+                        <span class="menu-item__name">Peach Soda 0,7l</span>
+                        <span class="menu-item__price">6,50 €</span>
+                     </summary>
+                     <div class="menu-item__body">
+                        <h3 class="menu-item__subtitle">Stoffe oder Erzeugnisse, die Allergien oder Intoleranzen auslösen</h3>
+                        <ul class="menu-item__list">
+                           <li>Mit Farbstoff</li>
+                        </ul>
+                        <h3 class="menu-item__subtitle">Allergene</h3>
+                        <ul class="menu-item__list"></ul>
+                        <p class="menu-item__disclaimer">Druckfehler, Irrtümer und Änderungen vorbehalten.</p>
+                     </div>
+                  </details>
+                  <details class="menu-item">
+                     <summary class="menu-item__summary">
+                        <span class="menu-item__name">Maracuja Soda 0,7l</span>
+                        <span class="menu-item__price">6,50 €</span>
+                     </summary>
+                     <div class="menu-item__body">
+                        <h3 class="menu-item__subtitle">Stoffe oder Erzeugnisse, die Allergien oder Intoleranzen auslösen</h3>
+                        <ul class="menu-item__list">
+                           <li>Mit Farbstoff</li>
+                        </ul>
+                        <h3 class="menu-item__subtitle">Allergene</h3>
+                        <ul class="menu-item__list"></ul>
+                        <p class="menu-item__disclaimer">Druckfehler, Irrtümer und Änderungen vorbehalten.</p>
+                     </div>
+                  </details>
+                  <details class="menu-item">
+                     <summary class="menu-item__summary">
+                        <span class="menu-item__name">Mango Soda 0,5l</span>
+                        <span class="menu-item__price">6,00 €</span>
+                     </summary>
+                     <div class="menu-item__body">
+                        <h3 class="menu-item__subtitle">Stoffe oder Erzeugnisse, die Allergien oder Intoleranzen auslösen</h3>
+                        <ul class="menu-item__list">
+                           <li>Mit Konservierungsstoffen</li>
+                           <li>Mit Süßungsmittel(n)</li>
+                        </ul>
+                        <h3 class="menu-item__subtitle">Allergene</h3>
+                        <ul class="menu-item__list"></ul>
+                        <p class="menu-item__disclaimer">Druckfehler, Irrtümer und Änderungen vorbehalten.</p>
+                     </div>
+                  </details>
+                  <details class="menu-item">
+                     <summary class="menu-item__summary">
+                        <span class="menu-item__name">Mango Soda 0,7l</span>
+                        <span class="menu-item__price">6,50 €</span>
+                     </summary>
+                     <div class="menu-item__body">
+                        <h3 class="menu-item__subtitle">Stoffe oder Erzeugnisse, die Allergien oder Intoleranzen auslösen</h3>
+                        <ul class="menu-item__list">
+                           <li>Mit Konservierungsstoffen</li>
+                           <li>Mit Süßungsmittel(n)</li>
+                        </ul>
+                        <h3 class="menu-item__subtitle">Allergene</h3>
+                        <ul class="menu-item__list"></ul>
+                        <p class="menu-item__disclaimer">Druckfehler, Irrtümer und Änderungen vorbehalten.</p>
+                     </div>
+                  </details>
+                  <details class="menu-item">
+                     <summary class="menu-item__summary">
+                        <span class="menu-item__name">Strawberry Soda 0,5l</span>
+                        <span class="menu-item__price">6,00 €</span>
+                     </summary>
+                     <div class="menu-item__body">
+                        <h3 class="menu-item__subtitle">Stoffe oder Erzeugnisse, die Allergien oder Intoleranzen auslösen</h3>
+                        <ul class="menu-item__list">
+                           <li>Mit Farbstoff</li>
+                        </ul>
+                        <h3 class="menu-item__subtitle">Allergene</h3>
+                        <ul class="menu-item__list"></ul>
+                        <p class="menu-item__disclaimer">Druckfehler, Irrtümer und Änderungen vorbehalten.</p>
+                     </div>
+                  </details>
+                  <details class="menu-item">
+                     <summary class="menu-item__summary">
+                        <span class="menu-item__name">Peach Soda 0,5l</span>
+                        <span class="menu-item__price">6,00 €</span>
+                     </summary>
+                     <div class="menu-item__body">
+                        <h3 class="menu-item__subtitle">Stoffe oder Erzeugnisse, die Allergien oder Intoleranzen auslösen</h3>
+                        <ul class="menu-item__list">
+                           <li>Mit Farbstoff</li>
+                        </ul>
+                        <h3 class="menu-item__subtitle">Allergene</h3>
+                        <ul class="menu-item__list"></ul>
+                        <p class="menu-item__disclaimer">Druckfehler, Irrtümer und Änderungen vorbehalten.</p>
+                     </div>
+                  </details>
+                  <details class="menu-item">
+                     <summary class="menu-item__summary">
+                        <span class="menu-item__name">Maracuja Soda 0,5l</span>
+                        <span class="menu-item__price">6,00 €</span>
+                     </summary>
+                     <div class="menu-item__body">
+                        <h3 class="menu-item__subtitle">Stoffe oder Erzeugnisse, die Allergien oder Intoleranzen auslösen</h3>
+                        <ul class="menu-item__list">
+                           <li>Mit Farbstoff</li>
+                        </ul>
+                        <h3 class="menu-item__subtitle">Allergene</h3>
+                        <ul class="menu-item__list"></ul>
+                        <p class="menu-item__disclaimer">Druckfehler, Irrtümer und Änderungen vorbehalten.</p>
+                     </div>
+                  </details>
+                  <details class="menu-item">
+                     <summary class="menu-item__summary">
+                        <span class="menu-item__name">Cherry Soda 0,7l</span>
+                        <span class="menu-item__price">6,50 €</span>
+                     </summary>
+                     <div class="menu-item__body">
+                        <h3 class="menu-item__subtitle">Stoffe oder Erzeugnisse, die Allergien oder Intoleranzen auslösen</h3>
+                        <ul class="menu-item__list">
+                           <li>Mit Konservierungsstoffen</li>
+                           <li>Mit Süßungsmittel(n)</li>
+                        </ul>
+                        <h3 class="menu-item__subtitle">Allergene</h3>
+                        <ul class="menu-item__list"></ul>
+                        <p class="menu-item__disclaimer">Druckfehler, Irrtümer und Änderungen vorbehalten.</p>
+                     </div>
+                  </details>
+                  <details class="menu-item">
+                     <summary class="menu-item__summary">
+                        <span class="menu-item__name">Cherry Soda 0,5l</span>
+                        <span class="menu-item__price">6,00 €</span>
+                     </summary>
+                     <div class="menu-item__body">
+                        <h3 class="menu-item__subtitle">Stoffe oder Erzeugnisse, die Allergien oder Intoleranzen auslösen</h3>
+                        <ul class="menu-item__list">
+                           <li>Mit Konservierungsstoffen</li>
+                           <li>Mit Süßungsmittel(n)</li>
+                        </ul>
+                        <h3 class="menu-item__subtitle">Allergene</h3>
+                        <ul class="menu-item__list"></ul>
+                        <p class="menu-item__disclaimer">Druckfehler, Irrtümer und Änderungen vorbehalten.</p>
+                     </div>
+                  </details>
+                  <details class="menu-item">
+                     <summary class="menu-item__summary">
+                        <span class="menu-item__name">Kumquat Soda 0,7l</span>
+                        <span class="menu-item__price">6,50 €</span>
+                     </summary>
+                     <div class="menu-item__body">
+                        <h3 class="menu-item__subtitle">Stoffe oder Erzeugnisse, die Allergien oder Intoleranzen auslösen</h3>
+                        <ul class="menu-item__list">
+                           <li>Mit Farbstoff</li>
+                        </ul>
+                        <h3 class="menu-item__subtitle">Allergene</h3>
+                        <ul class="menu-item__list"></ul>
+                        <p class="menu-item__disclaimer">Druckfehler, Irrtümer und Änderungen vorbehalten.</p>
+                     </div>
+                  </details>
+                  <details class="menu-item">
+                     <summary class="menu-item__summary">
+                        <span class="menu-item__name">Kumquat Soda 0,5l</span>
+                        <span class="menu-item__price">6,00 €</span>
+                     </summary>
+                     <div class="menu-item__body">
+                        <h3 class="menu-item__subtitle">Stoffe oder Erzeugnisse, die Allergien oder Intoleranzen auslösen</h3>
+                        <ul class="menu-item__list">
+                           <li>Mit Farbstoff</li>
+                        </ul>
+                        <h3 class="menu-item__subtitle">Allergene</h3>
+                        <ul class="menu-item__list"></ul>
+                        <p class="menu-item__disclaimer">Druckfehler, Irrtümer und Änderungen vorbehalten.</p>
+                     </div>
+                  </details>
+                  <details class="menu-item">
+                     <summary class="menu-item__summary">
+                        <span class="menu-item__name">Lychee Soda 0,7l</span>
+                        <span class="menu-item__price">6,50 €</span>
+                     </summary>
+                     <div class="menu-item__body">
+                        <h3 class="menu-item__subtitle">Stoffe oder Erzeugnisse, die Allergien oder Intoleranzen auslösen</h3>
+                        <ul class="menu-item__list">
+                           <li>Mit Farbstoff</li>
+                        </ul>
+                        <h3 class="menu-item__subtitle">Allergene</h3>
+                        <ul class="menu-item__list"></ul>
+                        <p class="menu-item__disclaimer">Druckfehler, Irrtümer und Änderungen vorbehalten.</p>
+                     </div>
+                  </details>
+                  <details class="menu-item">
+                     <summary class="menu-item__summary">
+                        <span class="menu-item__name">Lychee Soda 0,5l</span>
+                        <span class="menu-item__price">6,00 €</span>
+                     </summary>
+                     <div class="menu-item__body">
+                        <h3 class="menu-item__subtitle">Stoffe oder Erzeugnisse, die Allergien oder Intoleranzen auslösen</h3>
+                        <ul class="menu-item__list">
+                           <li>Mit Farbstoff</li>
+                        </ul>
+                        <h3 class="menu-item__subtitle">Allergene</h3>
+                        <ul class="menu-item__list"></ul>
+                        <p class="menu-item__disclaimer">Druckfehler, Irrtümer und Änderungen vorbehalten.</p>
+                     </div>
+                  </details>
+                  <details class="menu-item">
+                     <summary class="menu-item__summary">
+                        <span class="menu-item__name">Strawberry Soda 0,7l</span>
+                        <span class="menu-item__price">6,50 €</span>
+                     </summary>
+                     <div class="menu-item__body">
+                        <h3 class="menu-item__subtitle">Stoffe oder Erzeugnisse, die Allergien oder Intoleranzen auslösen</h3>
+                        <ul class="menu-item__list">
+                           <li>Mit Farbstoff</li>
+                        </ul>
+                        <h3 class="menu-item__subtitle">Allergene</h3>
+                        <ul class="menu-item__list"></ul>
+                        <p class="menu-item__disclaimer">Druckfehler, Irrtümer und Änderungen vorbehalten.</p>
+                     </div>
+                  </details>
+            </div>
+         </section>
+         <section class="menu-category" id="specials">
+            <h2 class="menu-category__title">Specials</h2>
+            <p class="menu-category__note">Alle Getränke werden mit einem Topping Ihrer Wahl zubereitet.</p>
+            <div class="menu-category__items">
+                  <details class="menu-item">
+                     <summary class="menu-item__summary">
+                        <span class="menu-item__name">Mango Maracuja Fusion 0,5l</span>
+                        <span class="menu-item__price">6,50 €</span>
+                     </summary>
+                     <div class="menu-item__body">
+                        <h3 class="menu-item__subtitle">Stoffe oder Erzeugnisse, die Allergien oder Intoleranzen auslösen</h3>
+                        <ul class="menu-item__list">
+                           <li>Mit Konservierungsstoffen</li>
+                           <li>Mit Süßungsmittel(n)</li>
+                           <li>Enthält Koffein</li>
+                           <li>Mit Farbstoff</li>
+                        </ul>
+                        <h3 class="menu-item__subtitle">Allergene</h3>
+                        <ul class="menu-item__list">
+                           <li>Enthält Milch/-Erzeugnisse (laktosehaltig)</li>
+                        </ul>
+                        <p class="menu-item__disclaimer">Druckfehler, Irrtümer und Änderungen vorbehalten.</p>
+                     </div>
+                  </details>
+                  <details class="menu-item">
+                     <summary class="menu-item__summary">
+                        <span class="menu-item__name">Brown Sugar Bubble Latte 0,5l</span>
+                        <span class="menu-item__price">6,50 €</span>
+                     </summary>
+                     <div class="menu-item__body">
+                        <h3 class="menu-item__subtitle">Stoffe oder Erzeugnisse, die Allergien oder Intoleranzen auslösen</h3>
+                        <ul class="menu-item__list">
+                           <li>Mit Konservierungsstoffen</li>
+                           <li>Enthält Koffein</li>
+                        </ul>
+                        <h3 class="menu-item__subtitle">Allergene</h3>
+                        <ul class="menu-item__list">
+                           <li>Enthält Milch/-Erzeugnisse (laktosehaltig)</li>
+                        </ul>
+                        <p class="menu-item__disclaimer">Druckfehler, Irrtümer und Änderungen vorbehalten.</p>
+                     </div>
+                  </details>
+                  <details class="menu-item">
+                     <summary class="menu-item__summary">
+                        <span class="menu-item__name">Mango Maracuja Fusion 0,7l</span>
+                        <span class="menu-item__price">7,00 €</span>
+                     </summary>
+                     <div class="menu-item__body">
+                        <h3 class="menu-item__subtitle">Stoffe oder Erzeugnisse, die Allergien oder Intoleranzen auslösen</h3>
+                        <ul class="menu-item__list">
+                           <li>Mit Konservierungsstoffen</li>
+                           <li>Mit Süßungsmittel(n)</li>
+                           <li>Enthält Koffein</li>
+                           <li>Mit Farbstoff</li>
+                        </ul>
+                        <h3 class="menu-item__subtitle">Allergene</h3>
+                        <ul class="menu-item__list">
+                           <li>Enthält Milch/-Erzeugnisse (laktosehaltig)</li>
+                        </ul>
+                        <p class="menu-item__disclaimer">Druckfehler, Irrtümer und Änderungen vorbehalten.</p>
+                     </div>
+                  </details>
+                  <details class="menu-item">
+                     <summary class="menu-item__summary">
+                        <span class="menu-item__name">Brown Sugar Bubble Latte 0,7l</span>
+                        <span class="menu-item__price">7,00 €</span>
+                     </summary>
+                     <div class="menu-item__body">
+                        <h3 class="menu-item__subtitle">Stoffe oder Erzeugnisse, die Allergien oder Intoleranzen auslösen</h3>
+                        <ul class="menu-item__list">
+                           <li>Mit Konservierungsstoffen</li>
+                           <li>Enthält Koffein</li>
+                        </ul>
+                        <h3 class="menu-item__subtitle">Allergene</h3>
+                        <ul class="menu-item__list">
+                           <li>Enthält Milch/-Erzeugnisse (laktosehaltig)</li>
+                        </ul>
+                        <p class="menu-item__disclaimer">Druckfehler, Irrtümer und Änderungen vorbehalten.</p>
+                     </div>
+                  </details>
+            </div>
+         </section>
       </section>
    </main>
 
    <!--=============== FOOTER ===============-->
    <footer class="footer">
       <div class="footer__content container">
-         <div class="footer__section">
-            <h3 class="footer__title">Anlaufstelle</h3>
+         <div class="footer__section" id="kontaktinformationen">
+            <h3 class="footer__title">Kontaktinformationen</h3>
             <p class="footer__text">
-               Technische Hochschule Augsburg<br>
-               Campus am Rotem Tor<br>
-               Fakultät Informatik | Funkenwerk<br>
-               Raum J1.08 - Erdgeschoss<br>
-               Telefon: <a href="tel:+4982155863468">+49 821 5586-3468</a><br>
-               E-Mail: <a href="mailto:funkenwerk@tha.de">funkenwerk@tha.de</a>
+               Pandoba Augsburg<br>
+               Annastr. 5<br>
+               86150 Augsburg (Innenstadt)<br>
             </p>
-         </div>
-
-         <div class="footer__section">
-            <h3 class="footer__title">Allgemeine Anschrift</h3>
-            <p class="footer__text">
-               Technische Hochschule Augsburg<br>
-               Fakultät Informatik | Funkenwerk<br>
-               An der Hochschule 1<br>
-               86161 Augsburg
-            </p>
-         </div>
-
             <div class="footer__social" aria-label="Social Media Links">
-               <a href="https://www.linkedin.com/showcase/tha-funkenwerk/" class="footer__social-link" aria-label="LinkedIn">
-                  <i class="ri-linkedin-box-line"></i>
+               <a href="https://www.facebook.com" class="footer__social-link" aria-label="Facebook">
+                  <i class="ri-facebook-line"></i>
                </a>
-               <a href="https://youtube.com/@tha_funkenwerk/" class="footer__social-link" aria-label="YouTube">
-                  <i class="ri-youtube-line"></i>
-               </a>
-               <a href="https://www.instagram.com/tha_funkenwerk/" class="footer__social-link" aria-label="Instagram">
+               <a href="https://www.instagram.com" class="footer__social-link" aria-label="Instagram">
                   <i class="ri-instagram-line"></i>
+               </a>
+               <a href="https://github.com/tishutox/Bubble-Tea-Shop" class="footer__social-link" aria-label="GitHub">
+                  <i class="ri-github-line"></i>
                </a>
             </div>
          </div>
+
+         <div class="footer__section" id="oeffnungszeiten">
+            <h3 class="footer__title">Öffnungszeiten</h3>
+            <div class="footer__hours">
+               <div class="footer__hours-col">
+                  <p class="footer__text">Montag</p>
+                  <p class="footer__text">Dienstag</p>
+                  <p class="footer__text">Mittwoch</p>
+                  <p class="footer__text">Donnerstag</p>
+                  <p class="footer__text">Freitag</p>
+                  <p class="footer__text">Samstag</p>
+                  <p class="footer__text">Sonntag</p>
+               </div>
+               <div class="footer__hours-col">
+                  <p class="footer__text">11:30 - 19:30</p>
+                  <p class="footer__text">11:30 - 19:30</p>
+                  <p class="footer__text">11:30 - 19:30</p>
+                  <p class="footer__text">11:30 - 19:30</p>
+                  <p class="footer__text">11:30 - 19:30</p>
+                  <p class="footer__text">11:30 - 17:30</p>
+                  <p class="footer__text">Geschlossen</p>
+               </div>
+            </div>
+         </div>
+      </div>
+
+      <div class="footer__legal container">
+         <span>© <span data-current-year>2026</span> Pandoba Augsburg</span>
+         <button class="footer__legal-btn" data-modal-open="modal-impressum">Impressum</button>
+         <button class="footer__legal-btn" data-modal-open="modal-datenschutz">Datenschutzerklärung</button>
       </div>
    </footer>
+
+   <!--=============== MODAL: IMPRESSUM ===============-->
+   <div class="modal-overlay" id="modal-impressum" role="dialog" aria-modal="true" aria-labelledby="impressum-title">
+      <div class="modal">
+         <div class="modal__header">
+            <h2 class="modal__title" id="impressum-title">
+               <i class="ri-file-paper-2-line" aria-hidden="true"></i> Impressum
+            </h2>
+            <button class="modal__close" aria-label="Schließen" data-modal-close>
+               <i class="ri-close-line" aria-hidden="true"></i>
+            </button>
+         </div>
+         <div class="modal__body">
+            <div class="modal__notice">
+               <i class="ri-graduation-cap-line" aria-hidden="true"></i>
+               <p><strong>Hinweis:</strong> Diese Website ist ein <strong>Studentenprojekt</strong> und wurde zu rein schulischen / akademischen Zwecken erstellt. Bei &bdquo;Pandoba Augsburg&ldquo; handelt es sich um eine <strong>fiktive Firma</strong> &ndash; kein echtes Unternehmen, kein echtes Angebot. Alle Angaben sind ohne Rechtswirkung.</p>
+            </div>
+            <h3>Angaben gemäß § 5 TMG</h3>
+            <address>
+               Pandoba Augsburg<br>
+               Annastr. 5<br>
+               86150 Augsburg (Innenstadt)
+            </address>
+
+            <h3>Kontakt</h3>
+            <p>E-Mail: <a href="mailto:info@pandoba-augsburg.de">info@pandoba-augsburg.de</a></p>
+
+            <h3>Haftungsausschluss</h3>
+            <p>Die Inhalte dieser Website wurden mit größtmöglicher Sorgfalt erstellt. Für die Richtigkeit, Vollständigkeit und Aktualität der Inhalte können wir jedoch keine Gewähr übernehmen.</p>
+
+            <h3>Externe Links</h3>
+            <p>Diese Website enthält Links zu externen Websites Dritter, auf deren Inhalte wir keinen Einfluss haben. Für die Inhalte der verlinkten Seiten ist stets der jeweilige Anbieter oder Betreiber der Seiten verantwortlich.</p>
+
+            <h3>Urheberrecht</h3>
+            <p>Die durch die Seitenbetreiber erstellten Inhalte und Werke auf dieser Website unterliegen dem deutschen Urheberrecht. Die Vervielfältigung, Bearbeitung, Verbreitung und jede Art der Verwertung außerhalb der Grenzen des Urheberrechts bedürfen der schriftlichen Zustimmung des jeweiligen Autors bzw. Erstellers.</p>
+         </div>
+      </div>
+   </div>
+
+   <!--=============== MODAL: DATENSCHUTZERKLÄRUNG ===============-->
+   <div class="modal-overlay" id="modal-datenschutz" role="dialog" aria-modal="true" aria-labelledby="datenschutz-title">
+      <div class="modal">
+         <div class="modal__header">
+            <h2 class="modal__title" id="datenschutz-title">
+               <i class="ri-shield-keyhole-line" aria-hidden="true"></i> Datenschutzerklärung
+            </h2>
+            <button class="modal__close" aria-label="Schließen" data-modal-close>
+               <i class="ri-close-line" aria-hidden="true"></i>
+            </button>
+         </div>
+         <div class="modal__body">
+            <div class="modal__notice">
+               <i class="ri-graduation-cap-line" aria-hidden="true"></i>
+               <p><strong>Hinweis:</strong> Diese Website ist ein <strong>Studentenprojekt</strong> und wurde zu rein schulischen / akademischen Zwecken erstellt. Bei &bdquo;Pandoba Augsburg&ldquo; handelt es sich um eine <strong>fiktive Firma</strong> &ndash; kein echtes Unternehmen. Diese Datenschutzerklärung dient ausschließlich der Veranschaulichung und hat keine rechtliche Bindungswirkung.</p>
+            </div>
+            <p>Der Schutz Ihrer persönlichen Daten ist uns ein besonderes Anliegen. Diese Datenschutzerklärung gilt gemäß der <strong>Datenschutz-Grundverordnung (DSGVO)</strong> sowie dem <strong>Schweizer Datenschutzgesetz (DSG nDSG)</strong>.</p>
+
+            <h3>1. Verantwortlicher</h3>
+            <address>
+               Pandoba Augsburg<br>
+               Annastr. 5<br>
+               86150 Augsburg (Innenstadt)<br>
+               E-Mail: <a href="mailto:info@pandoba-augsburg.de">info@pandoba-augsburg.de</a>
+            </address>
+
+            <h3>2. Erhobene Daten &amp; Zwecke</h3>
+            <ul>
+               <li><strong>Kontakt- / Bestellformular:</strong> Name, E-Mail-Adresse und Bestelldetails werden zur Bearbeitung Ihrer Anfrage verarbeitet (Art. 6 Abs. 1 lit. b DSGVO / Art. 31 Abs. 2 lit. a DSG).</li>
+               <li><strong>Server-Logs:</strong> IP-Adresse, Browsertyp sowie Datum und Uhrzeit des Zugriffs werden aus berechtigtem Interesse zur Sicherstellung des Betriebs und zur Missbrauchsprävention gespeichert (Art. 6 Abs. 1 lit. f DSGVO).</li>
+               <li><strong>Lokaler Speicher (localStorage):</strong> Die Farbschema-Präferenz (Dark / Light Mode) wird lokal in Ihrem Browser gespeichert. Es handelt sich um keinen Personenbezug; eine Übertragung an Server findet nicht statt.</li>
+            </ul>
+
+            <h3>3. Externe Dienste &amp; Datenübermittlungen</h3>
+            <ul>
+               <li><strong>Google Fonts:</strong> Beim Seitenaufruf wird eine Verbindung zu Google-Servern hergestellt, wodurch Ihre IP-Adresse übertragen werden kann. Anbieter: Google LLC, 1600 Amphitheatre Parkway, Mountain View, CA 94043, USA. Datenschutzerklärung: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">policies.google.com/privacy</a>.</li>
+               <li><strong>RemixIcons (jsDelivr CDN):</strong> Icons werden über jsDelivr geladen. Dabei kann Ihre IP-Adresse übertragen werden. Datenschutzerklärung: <a href="https://www.jsdelivr.com/privacy-policy-jsdelivr-net" target="_blank" rel="noopener noreferrer">jsdelivr.com/privacy-policy</a>.</li>
+            </ul>
+
+            <h3>4. Datenweitergabe</h3>
+            <p>Eine Weitergabe Ihrer personenbezogenen Daten an Dritte findet nicht statt, außer wenn wir gesetzlich dazu verpflichtet sind oder Sie ausdrücklich eingewilligt haben.</p>
+
+            <h3>5. Datenspeicherung &amp; Löschung</h3>
+            <p>Wir speichern Ihre Daten nur so lange, wie es für den jeweiligen Verarbeitungszweck erforderlich ist oder gesetzliche Aufbewahrungspflichten bestehen. Danach werden die Daten routinemäßig gelöscht.</p>
+
+            <h3>6. Ihre Rechte (DSGVO / DSG)</h3>
+            <p>Sie haben das Recht auf:</p>
+            <ul>
+               <li>Auskunft über gespeicherte Daten (Art. 15 DSGVO / Art. 25 DSG)</li>
+               <li>Berichtigung unrichtiger Daten (Art. 16 DSGVO / Art. 32 DSG)</li>
+               <li>Löschung Ihrer Daten (Art. 17 DSGVO / Art. 32 DSG)</li>
+               <li>Einschränkung der Verarbeitung (Art. 18 DSGVO)</li>
+               <li>Datenübertragbarkeit (Art. 20 DSGVO)</li>
+               <li>Widerspruch gegen die Verarbeitung (Art. 21 DSGVO)</li>
+               <li>Beschwerde bei der zuständigen Aufsichtsbehörde: in Deutschland beim <strong>Bayerischen Landesamt für Datenschutzaufsicht (BayLDA)</strong>; in der Schweiz beim <strong>Eidgenössischen Datenschutz- und Öffentlichkeitsbeauftragten (EDÖB)</strong>.</li>
+            </ul>
+
+            <h3>7. Kontakt für Datenschutzanfragen</h3>
+            <p>Für alle Anfragen zum Datenschutz wenden Sie sich bitte an: <a href="mailto:info@pandoba-augsburg.de">info@pandoba-augsburg.de</a></p>
+
+            <h3>8. Aktualität dieser Erklärung</h3>
+            <p>Diese Datenschutzerklärung hat den Stand: Mai 2026. Wir behalten uns vor, sie bei gesetzlichen oder inhaltlichen Änderungen anzupassen.</p>
+         </div>
+      </div>
+   </div>
+
+   <button class="cookie-consent-trigger" type="button" data-modal-open="modal-cookies" aria-label="Cookie-Einstellungen öffnen">
+      <i class="ri-cookie-line" aria-hidden="true"></i>
+      <span>Cookies</span>
+   </button>
+
+   <!--=============== MODAL: COOKIE-HINWEISE ===============-->
+   <div class="modal-overlay" id="modal-cookies" role="dialog" aria-modal="true" aria-labelledby="cookies-title">
+      <div class="modal">
+         <div class="modal__header">
+            <h2 class="modal__title" id="cookies-title">
+               <i class="ri-cookie-line" aria-hidden="true"></i> Cookie-Hinweise
+            </h2>
+            <button class="modal__close" aria-label="Schließen" data-modal-close>
+               <i class="ri-close-line" aria-hidden="true"></i>
+            </button>
+         </div>
+         <div class="modal__body">
+            <div class="modal__notice">
+               <i class="ri-information-2-line" aria-hidden="true"></i>
+               <p>Wir halten den Einsatz von Cookies auf dieser Website bewusst schlank. In diesem Fenster finden Sie transparent zusammengefasst, was gesetzt wird und warum.</p>
+            </div>
+
+            <h3>Welche Cookies verwenden wir?</h3>
+            <ul>
+               <li><strong>Funktionale Speicherung (localStorage):</strong> Nur Ihre Theme-Auswahl (Dark / Light Mode), damit die Seite beim nächsten Besuch gleich aussieht.</li>
+               <li><strong>Keine Tracking- oder Marketing-Cookies:</strong> Es werden keine Werbeprofile erstellt und kein Verhalten zu Marketingzwecken verfolgt.</li>
+            </ul>
+
+            <h3>Externe Inhalte</h3>
+            <p>Externe Dienste wie Google Fonts und jsDelivr (Remix Icons) können technisch bedingt Verbindungsdaten wie die IP-Adresse verarbeiten. Details finden Sie in der Datenschutzerklärung.</p>
+
+            <h3>Ihre Kontrolle</h3>
+            <p>Sie können gespeicherte Website-Daten jederzeit über Ihre Browser-Einstellungen löschen. Danach wird auch die gespeicherte Theme-Auswahl zurückgesetzt.</p>
+         </div>
+      </div>
+   </div>
 
    <!--=============== MAIN JS ===============-->
    <script src="assets/js/main.js"></script>
 </body>
 </html>
+
+
 
 
