@@ -166,7 +166,7 @@ const initCaptcha = () => {
             ctx.beginPath()
             ctx.moveTo(Math.random() * w, Math.random() * h)
             ctx.lineTo(Math.random() * w, Math.random() * h)
-            ctx.strokeStyle = `rgba(65, 250, 142, ${0.15 + Math.random() * 0.25})`
+            ctx.strokeStyle = `rgba(194, 141, 71, ${0.15 + Math.random() * 0.25})`
             ctx.lineWidth = 1
             ctx.stroke()
         }
@@ -187,7 +187,7 @@ const initCaptcha = () => {
             ctx.rotate((Math.random() - 0.5) * 0.55)
             const size = 20 + Math.floor(Math.random() * 5)
             ctx.font = `bold ${size}px Montserrat, sans-serif`
-            ctx.fillStyle = `hsl(${140 + Math.floor(Math.random() * 20)}, 95%, ${65 + Math.floor(Math.random() * 15)}%)`
+            ctx.fillStyle = `hsl(${32 + Math.floor(Math.random() * 8)}, 72%, ${58 + Math.floor(Math.random() * 16)}%)`
             ctx.textAlign = 'center'
             ctx.textBaseline = 'middle'
             ctx.fillText(code[i], 0, 0)
@@ -246,7 +246,7 @@ const initThemeToggle = () => {
     if (!btns.length) return
 
     const DARK_CLASS = 'dark-mode'
-    const STORAGE_KEY = 'pandoba-theme'
+    const STORAGE_KEY = 'kinmo-theme'
     const ICON_DARK = 'ri-sun-line'
     const ICON_LIGHT = 'ri-moon-clear-line'
 
