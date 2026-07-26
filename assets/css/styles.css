@@ -48,6 +48,7 @@ body {
   font-family: var(--body-font);
   font-size: var(--normal-font-size);
   background-color: var(--body-color);
+  color: var(--black-color);
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -1820,6 +1821,75 @@ body.dark-mode {
   --black-color-lighten: hsl(220, 15%, 55%);
 }
 
+/* Header & Nav Dark Mode */
+.dark-mode .header {
+  color: #fff;
+}
+
+.dark-mode .nav__logo,
+.dark-mode .nav__burger,
+.dark-mode .nav__close {
+  color: #fff;
+}
+
+.dark-mode .nav__logo img {
+  filter: brightness(1.2);
+}
+
+.dark-mode .nav__theme-toggle {
+  color: #fff;
+}
+
+.dark-mode .nav__theme-toggle:hover {
+  background-color: rgba(255, 255, 255, 0.15);
+}
+
+/* Footer Dark Mode */
+.dark-mode .footer {
+  color: hsl(220, 15%, 92%);
+}
+
+.dark-mode .footer__legal {
+  border-top-color: rgba(0, 0, 0, 0.15);
+}
+
+.dark-mode .footer__legal-btn {
+  color: hsl(220, 15%, 80%);
+}
+
+.dark-mode .footer__legal-btn:hover {
+  color: #fff;
+}
+
+/* Dropdown Dark Mode */
+.dark-mode .dropdown__link,
+.dark-mode .dropdown__sublink {
+  color: #fff;
+  background-color: #c28d47;
+}
+
+.dark-mode .dropdown__link:hover,
+.dark-mode .dropdown__sublink:hover {
+  background-color: #c28d47;
+}
+
+.dark-mode .dropdown__link i,
+.dark-mode .dropdown__sublink i {
+  color: #fff;
+}
+
+.dark-mode .nav__link {
+  color: #fff;
+}
+
+.dark-mode .nav__link:hover {
+  background-color: #c28d47;
+}
+
+.dark-mode .nav__list {
+  background-color: #c28d47;
+}
+
 .dark-mode .review-card {
   background-color: hsl(220, 20%, 14%);
   border-color: hsl(220, 15%, 22%);
@@ -2247,6 +2317,7 @@ body.dark-mode {
 /*=============== MODAL DARK MODE ===============*/
 .dark-mode .modal {
   background-color: hsl(220, 20%, 14%);
+  color: hsl(220, 15%, 88%);
   box-shadow: 0 8px 40px rgba(0, 0, 0, .45);
 }
 
@@ -2265,20 +2336,30 @@ body.dark-mode {
   color: #d3a467;
 }
 
+.dark-mode .modal__body p,
+.dark-mode .modal__body strong {
+  color: hsl(220, 15%, 80%);
+}
+
+.dark-mode .modal__body a:hover {
+  opacity: .75;
+}
+
 .dark-mode .modal__notice {
   background-color: rgba(194, 141, 71, .14);
   border-color: rgba(194, 141, 71, .45);
 }
 
 .dark-mode .cookie-consent-trigger {
-  background-color: hsl(220, 20%, 18%);
+  background: linear-gradient(145deg, hsl(220, 20%, 18%) 0%, hsl(220, 20%, 14%) 100%);
   color: hsl(220, 15%, 92%);
   border-color: rgba(194, 141, 71, .45);
   box-shadow: 0 10px 24px rgba(0, 0, 0, .38);
 }
 
 .dark-mode .cookie-consent-trigger:hover {
-  background-color: hsl(220, 20%, 22%);
+  background: linear-gradient(145deg, hsl(220, 20%, 22%) 0%, hsl(220, 20%, 16%) 100%);
+  box-shadow: 0 12px 26px rgba(0, 0, 0, .4);
 }
 
 /*=============== BREAKPOINTS ===============*/
