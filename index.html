@@ -3,8 +3,44 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.9.1/fonts/remixicon.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sofia+Sans:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/styles.css">
+  <style>
+    /* Base font size increase */
+    body {
+      font-size: 1.1rem;
+    }
+    /* Lucide icon size */
+    [data-lucide] {
+      width: 1.4rem;
+      height: 1.4rem;
+    }
+    /* Header and Footer text color always black */
+    .header, .footer, .header *, .footer * {
+      color: #000 !important;
+    }
+    .nav__link, .dropdown__link {
+      color: #000 !important;
+    }
+    /* Impressum heading spacing and size */
+    #modal-impressum .modal__body p {
+      margin: 0.5rem 0;
+    }
+    #modal-impressum .modal__body p:first-child {
+      margin-top: 0;
+    }
+    #modal-impressum .modal__body p:last-child {
+      margin-bottom: 0;
+    }
+    #modal-impressum .modal__body strong[style*="color"],
+    #modal-impressum .modal__body span[style*="color"] {
+      font-size: 1.15rem;
+      display: block;
+      margin: 0.75rem 0 0.5rem;
+    }
+  </style>
   <title>Kinmo eSports Augsburg</title>
 </head>
 <body>
@@ -16,11 +52,11 @@
         </a>
         <div class="nav__actions">
           <button id="theme-toggle" class="nav__theme-toggle" aria-label="Farbschema wechseln" title="Dark / Light Mode">
-            <i class="ri-moon-clear-line"></i>
+            <i data-lucide="moon"></i>
           </button>
           <div class="nav__toggle" id="nav-toggle">
-            <i class="ri-menu-4-line nav__burger"></i>
-            <i class="ri-close-line nav__close"></i>
+            <i class="nav__burger" data-lucide="menu"></i>
+            <i class="nav__close" data-lucide="x"></i>
           </div>
         </div>
       </div>
@@ -29,35 +65,35 @@
         <ul class="nav__list">
           <li class="nav__theme-li">
             <button class="nav__theme-toggle" aria-label="Farbschema wechseln" title="Dark / Light Mode">
-              <i class="ri-moon-clear-line"></i>
+              <i data-lucide="moon"></i>
             </button>
           </li>
 
           <li class="dropdown__item">
-            <div class="nav__link">Verein <i class="ri-arrow-down-s-line dropdown__arrow"></i></div>
+            <div class="nav__link">Verein <i class="dropdown__arrow" data-lucide="chevron-down"></i></div>
             <ul class="dropdown__menu">
-              <li><a href="index.html" class="dropdown__link"><i class="ri-home-5-line"></i> Start</a></li>
-              <li><a href="team.html" class="dropdown__link"><i class="ri-team-line"></i> Team</a></li>
-              <li><a href="beirat.html" class="dropdown__link"><i class="ri-group-2-line"></i> Beirat</a></li>
-              <li><a href="about.html" class="dropdown__link"><i class="ri-information-line"></i> About</a></li>
+              <li><a href="index.html" class="dropdown__link"><i data-lucide="triangle-alert"></i> Start</a></li>
+              <li><a href="team.html" class="dropdown__link"><i data-lucide="triangle-alert"></i> Team</a></li>
+              <li><a href="beirat.html" class="dropdown__link"><i data-lucide="triangle-alert"></i> Beirat</a></li>
+              <li><a href="about.html" class="dropdown__link"><i data-lucide="triangle-alert"></i> About</a></li>
             </ul>
           </li>
 
           <li class="dropdown__item">
-            <div class="nav__link">Projekte <i class="ri-arrow-down-s-line dropdown__arrow"></i></div>
+            <div class="nav__link">Projekte <i class="dropdown__arrow" data-lucide="chevron-down"></i></div>
             <ul class="dropdown__menu">
-              <li><a href="herventure.html" class="dropdown__link"><i class="ri-women-line"></i> HerVenture</a></li>
-              <li><a href="inkubator.html" class="dropdown__link"><i class="ri-rocket-line"></i> Inkubator</a></li>
-              <li><a href="startups.html" class="dropdown__link"><i class="ri-lightbulb-flash-line"></i> Startups</a></li>
+              <li><a href="herventure.html" class="dropdown__link"><i data-lucide="triangle-alert"></i> HerVenture</a></li>
+              <li><a href="inkubator.html" class="dropdown__link"><i data-lucide="triangle-alert"></i> Inkubator</a></li>
+              <li><a href="startups.html" class="dropdown__link"><i data-lucide="triangle-alert"></i> Startups</a></li>
             </ul>
           </li>
 
           <li class="dropdown__item">
-            <div class="nav__link">Service <i class="ri-arrow-down-s-line dropdown__arrow"></i></div>
+            <div class="nav__link">Service <i class="dropdown__arrow" data-lucide="chevron-down"></i></div>
             <ul class="dropdown__menu">
-              <li><a href="menu.html" class="dropdown__link"><i class="ri-restaurant-line"></i> Speisekarte</a></li>
-              <li><a href="contact.html" class="dropdown__link"><i class="ri-mail-send-line"></i> Kontakt</a></li>
-              <li><a href="index.html#partners" class="dropdown__link"><i class="ri-hand-heart-line"></i> Partner</a></li>
+              <li><a href="menu.html" class="dropdown__link"><i data-lucide="triangle-alert"></i> Speisekarte</a></li>
+              <li><a href="contact.html" class="dropdown__link"><i data-lucide="triangle-alert"></i> Kontakt</a></li>
+              <li><a href="index.html#partners" class="dropdown__link"><i data-lucide="triangle-alert"></i> Partner</a></li>
             </ul>
           </li>
         </ul>
@@ -96,12 +132,22 @@
   <div class="modal-overlay" id="modal-impressum" role="dialog" aria-modal="true" aria-labelledby="impressum-title">
     <div class="modal">
       <div class="modal__header">
-        <h2 class="modal__title" id="impressum-title"><i class="ri-file-paper-2-line" aria-hidden="true"></i> Impressum</h2>
-        <button class="modal__close" aria-label="Schliessen" data-modal-close><i class="ri-close-line" aria-hidden="true"></i></button>
+        <h2 class="modal__title" id="impressum-title"><i data-lucide="scroll"></i> Impressum</h2>
+        <button class="modal__close" aria-label="Schliessen" data-modal-close><i data-lucide="x"></i></button>
       </div>
       <div class="modal__body">
-        <p>Diese Website ist ein fiktives Studentenprojekt ohne kommerziellen Zweck.</p>
-        <p>Kontakt: <a href="mailto:kontakt@kinmo-esports.de">kontakt@kinmo-esports.de</a></p>
+        <p><strong style="color: #c28d47;">Angaben gemäß § 5 TMG</strong></p>
+        <p>Kinmo eSports Augsburg<br>
+        Annastr. 5<br>
+        86150 Augsburg (Innenstadt)</p>
+        <p><strong style="color: #c28d47;">Kontakt</strong></p>
+        <p><strong>E-Mail:</strong> <a href="mailto:kontakt@kinmo-esports.de">kontakt@kinmo-esports.de</a></p>
+        <p><strong style="color: #c28d47;">Haftungsausschluss</strong></p>
+        <p>Die Inhalte dieser Website wurden mit größtmöglicher Sorgfalt erstellt. Für die Richtigkeit, Vollständigkeit und Aktualität der Inhalte können wir jedoch keine Gewähr übernehmen.</p>
+        <p><strong style="color: #c28d47;">Externe Links</strong></p>
+        <p>Diese Website enthält Links zu externen Websites Dritter, auf deren Inhalte wir keinen Einfluss haben. Für die Inhalte der verlinkten Seiten ist stets der jeweilige Anbieter oder Betreiber der Seiten verantwortlich.</p>
+        <p><strong style="color: #c28d47;">Urheberrecht</strong></p>
+        <p>Die durch die Seitenbetreiber erstellten Inhalte und Werke auf dieser Website unterliegen dem deutschen Urheberrecht. Die Vervielfältigung, Bearbeitung, Verbreitung und jede Art der Verwertung außerhalb der Grenzen des Urheberrechts bedürfen der schriftlichen Zustimmung des jeweiligen Autors bzw. Erstellers.</p>
       </div>
     </div>
   </div>
@@ -109,8 +155,8 @@
   <div class="modal-overlay" id="modal-datenschutz" role="dialog" aria-modal="true" aria-labelledby="datenschutz-title">
     <div class="modal">
       <div class="modal__header">
-        <h2 class="modal__title" id="datenschutz-title"><i class="ri-shield-keyhole-line" aria-hidden="true"></i> Datenschutzerklaerung</h2>
-        <button class="modal__close" aria-label="Schliessen" data-modal-close><i class="ri-close-line" aria-hidden="true"></i></button>
+        <h2 class="modal__title" id="datenschutz-title"><i data-lucide="shield-keyhole"></i> Datenschutzerklaerung</h2>
+        <button class="modal__close" aria-label="Schliessen" data-modal-close><i data-lucide="x"></i></button>
       </div>
       <div class="modal__body">
         <p>Es werden keine Tracking-Cookies genutzt. Gespeichert wird nur die Theme-Praeferenz im Browser.</p>
@@ -120,14 +166,14 @@
   </div>
 
   <button class="cookie-consent-trigger" type="button" data-modal-open="modal-cookies" aria-label="Cookie-Einstellungen oeffnen">
-    <i class="ri-cookie-line" aria-hidden="true"></i><span>Cookies</span>
+    <i data-lucide="cookie"></i><span>Cookies</span>
   </button>
 
   <div class="modal-overlay" id="modal-cookies" role="dialog" aria-modal="true" aria-labelledby="cookies-title">
     <div class="modal">
       <div class="modal__header">
-        <h2 class="modal__title" id="cookies-title"><i class="ri-cookie-line" aria-hidden="true"></i> Cookie-Hinweise</h2>
-        <button class="modal__close" aria-label="Schliessen" data-modal-close><i class="ri-close-line" aria-hidden="true"></i></button>
+        <h2 class="modal__title" id="cookies-title"><i data-lucide="cookie"></i> Cookie-Hinweise</h2>
+        <button class="modal__close" aria-label="Schliessen" data-modal-close><i data-lucide="x"></i></button>
       </div>
       <div class="modal__body">
         <p>Nur funktionale Speicherung fuer den Dark-/Light-Mode. Kein Marketing-Tracking.</p>
@@ -135,6 +181,10 @@
     </div>
   </div>
 
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+  <script>
+    lucide.createIcons();
+  </script>
   <script src="assets/js/main.js"></script>
 </body>
 </html>

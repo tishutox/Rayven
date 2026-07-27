@@ -247,14 +247,18 @@ const initThemeToggle = () => {
 
     const DARK_CLASS = 'dark-mode'
     const STORAGE_KEY = 'kinmo-theme'
-    const ICON_DARK = 'ri-sun-line'
-    const ICON_LIGHT = 'ri-moon-clear-line'
 
     const updateIcons = (isDark) => {
         btns.forEach(btn => {
             const icon = btn.querySelector('i')
-            if (icon) icon.className = isDark ? ICON_DARK : ICON_LIGHT
+            if (icon) {
+                icon.setAttribute('data-lucide', isDark ? 'sun' : 'moon');
+            }
         })
+        // Force re-render all Lucide icons
+        if (window.lucide) {
+            window.lucide.createIcons();
+        }
     }
 
     // Apply saved preference on load
@@ -272,7 +276,10 @@ const initThemeToggle = () => {
     })
 }
 
-initThemeToggle()
+// Initialize theme toggle after Lucide is ready
+window.addEventListener('load', () => {
+    setTimeout(initThemeToggle, 50);
+});
 
 /*=============== CURRENT YEAR ===============*/
 const initCurrentYear = () => {
