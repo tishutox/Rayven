@@ -182,9 +182,28 @@
   </div>
 
   <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
-  <script>
-    lucide.createIcons();
-  </script>
   <script src="assets/js/main.js"></script>
+  <script>
+    // Initialize Lucide and theme after everything is ready
+    function renderLucide() {
+      if (typeof lucide !== 'undefined') return lucide;
+      if (typeof Lucide !== 'undefined') return Lucide;
+      if (window.lucide) return window.lucide;
+      if (window.Lucide) return window.Lucide;
+      return null;
+    }
+    function initAll() {
+      const lucideInstance = renderLucide();
+      if (lucideInstance) {
+        lucideInstance.createIcons();
+        if (typeof initThemeToggle === 'function') {
+          initThemeToggle();
+        }
+      } else {
+        setTimeout(initAll, 50);
+      }
+    }
+    window.addEventListener('load', initAll);
+  </script>
 </body>
 </html>

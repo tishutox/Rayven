@@ -250,15 +250,18 @@ const initThemeToggle = () => {
 
     const updateIcons = (isDark) => {
         btns.forEach(btn => {
-            const icon = btn.querySelector('i')
-            if (icon) {
-                icon.setAttribute('data-lucide', isDark ? 'sun' : 'moon');
-            }
+            btn.innerHTML = '<i data-lucide="' + (isDark ? 'sun' : 'moon') + '"></i>';
         })
-        // Force re-render all Lucide icons
-        if (window.lucide) {
-            window.lucide.createIcons();
-        }
+        // Force re-render
+        const renderLucide = () => {
+            if (typeof lucide !== 'undefined') lucide.createIcons();
+            else if (typeof Lucide !== 'undefined') Lucide.createIcons();
+            else if (window.lucide) window.lucide.createIcons();
+            else if (window.Lucide) window.Lucide.createIcons();
+        };
+        setTimeout(renderLucide, 10);
+        setTimeout(renderLucide, 50);
+        setTimeout(renderLucide, 100);
     }
 
     // Apply saved preference on load
@@ -275,11 +278,6 @@ const initThemeToggle = () => {
         })
     })
 }
-
-// Initialize theme toggle after Lucide is ready
-window.addEventListener('load', () => {
-    setTimeout(initThemeToggle, 50);
-});
 
 /*=============== CURRENT YEAR ===============*/
 const initCurrentYear = () => {
