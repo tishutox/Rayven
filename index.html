@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Rayven</title>
+	<meta
+		name="description"
+		content="Rayven eSports mit einem responsiven Header, Sprachumschaltung und mobilem Menü."
+	>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cormorant+Garamond:wght@500;600;700&display=swap"
+		rel="stylesheet"
+	>
+	<link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+	<div class="page-shell">
+		<header class="site-header is-light" data-header>
+			<div class="header-inner">
+				<button
+					class="menu-toggle"
+					type="button"
+					aria-label="Menü öffnen"
+					aria-expanded="false"
+					aria-controls="mobile-menu"
+					data-menu-toggle
+				>
+					<i data-lucide="equal"></i>
+				</button>
+
+				<nav class="desktop-nav" aria-label="Hauptnavigation">
+					<a href="#start" data-i18n="nav.home">START</a>
+					<a href="#about" data-i18n="nav.about">ÜBER</a>
+					<a href="#team" data-i18n="nav.team">TEAM</a>
+					<a href="#sponsors" data-i18n="nav.sponsors">SPONSOREN</a>
+				</nav>
+
+				<a class="brand-mark" href="#start" aria-label="Rayven Startseite">
+					<img src="assets/logo/logo.svg" alt="Rayven Logo">
+				</a>
+
+				<div class="header-actions">
+					<div class="language-switcher" data-language-switcher>
+						<button
+							class="language-trigger"
+							type="button"
+							aria-haspopup="true"
+							aria-expanded="false"
+							aria-label="Sprache auswählen"
+							data-language-trigger
+						>
+							<span data-current-language>DE</span>
+							<i data-lucide="chevron-down"></i>
+						</button>
+						<div class="language-menu" role="menu" aria-label="Sprachauswahl">
+							<button type="button" class="is-active" data-language="de">DE</button>
+							<button type="button" data-language="en">EN</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<div class="menu-overlay" data-menu-overlay></div>
+		<aside class="mobile-menu" id="mobile-menu" aria-hidden="true" data-mobile-menu>
+			<div class="mobile-menu-header">
+				<a class="brand-mark brand-mark-mobile" href="#start" aria-label="Rayven Startseite">
+					<img src="assets/logo/logo.svg" alt="Rayven Logo">
+				</a>
+				<button class="menu-close" type="button" aria-label="Menü schließen" data-menu-close>
+					<i data-lucide="x"></i>
+				</button>
+			</div>
+
+			<nav class="mobile-nav" aria-label="Mobile Hauptnavigation">
+				<a href="#start" data-i18n="nav.home">START</a>
+				<a href="#about" data-i18n="nav.about">ÜBER</a>
+				<a href="#team" data-i18n="nav.team">TEAM</a>
+				<a href="#sponsors" data-i18n="nav.sponsors">SPONSOREN</a>
+			</nav>
+
+			<div class="mobile-language-block">
+				<p data-i18n="labels.language">SPRACHE</p>
+				<div class="mobile-language-actions">
+					<button type="button" class="is-active" data-language="de">DE</button>
+					<button type="button" data-language="en">EN</button>
+				</div>
+			</div>
+		</aside>
+
+		<main>
+			<section class="hero" id="start" data-hero>
+				<div class="hero-backdrop"></div>
+				<div class="hero-content">
+					<p class="eyebrow">RAYVEN ESPORTS</p>
+					<h1 data-i18n="hero.title">ENTER THE FIGHT WITH PRECISION AND PRESENCE</h1>
+					<p class="hero-copy" data-i18n="hero.copy">
+						Wettbewerbsfokus, klare Identität und eine Bühne für ein Team, das nicht laut wirken muss, um aufzufallen.
+					</p>
+					<a class="hero-cta" href="#team" data-i18n="hero.cta">ZUM TEAM</a>
+				</div>
+			</section>
+
+			<section class="content-section" id="about">
+				<div class="section-copy">
+					<p class="section-label" data-i18n="sections.about.label">ÜBER</p>
+					<h2 data-i18n="sections.about.title">Ein klarer Auftritt für eine moderne eSports-Marke.</h2>
+					<p data-i18n="sections.about.body">
+						Der Header bleibt leicht, responsiv und präsent. Über dem Hero ist er transparent mit heller Typografie, nach dem Scrollen wechselt er auf eine helle Fläche mit dunklen Akzenten.
+					</p>
+				</div>
+			</section>
+
+			<section class="content-section alt" id="team">
+				<div class="section-copy">
+					<p class="section-label" data-i18n="sections.team.label">TEAM</p>
+					<h2 data-i18n="sections.team.title">Navigation und Sprache bleiben auf jeder Größe direkt erreichbar.</h2>
+					<p data-i18n="sections.team.body">
+						Auf Mobile fährt das Menü weich ein, der Sprachpfeil rotiert beim Aufklappen, und das Logo bleibt als Anker der Seite jederzeit sichtbar.
+					</p>
+				</div>
+			</section>
+
+			<section class="content-section" id="sponsors">
+				<div class="section-copy">
+					<p class="section-label" data-i18n="sections.sponsors.label">SPONSOREN</p>
+					<h2 data-i18n="sections.sponsors.title">Footer und Utility-Flächen sind bewusst reduziert gehalten.</h2>
+					<p data-i18n="sections.sponsors.body">
+						Die Struktur orientiert sich an Team Spirit, bleibt aber auf Rayven angepasst: kein Shop-Link, dafür ein kompakter Footer mit den gewünschten Menüpunkten.
+					</p>
+				</div>
+			</section>
+		</main>
+
+		<footer class="site-footer">
+			<nav class="footer-nav" aria-label="Footer Navigation">
+				<a href="#" data-i18n="footer.socials">SOZIALES</a>
+				<a href="#" data-i18n="footer.contact">KONTAKT</a>
+				<a href="#" data-i18n="footer.imprint">IMPRESSUM</a>
+				<a href="#" data-i18n="footer.legal">RECHTLICHES</a>
+			</nav>
+		</footer>
+	</div>
+
+	<script src="https://unpkg.com/lucide@latest"></script>
+	<script src="assets/js/main.js"></script>
+</body>
+</html>
