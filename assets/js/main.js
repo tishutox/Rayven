@@ -4,7 +4,8 @@ const translations = {
 			home: "START",
 			about: "ÜBER",
 			team: "TEAM",
-			sponsors: "SPONSOREN"
+			events: "VERANSTALTUNGEN",
+			form: "FORMULAR"
 		},
 		labels: {
 			language: "SPRACHE"
@@ -26,7 +27,8 @@ const translations = {
 			home: "HOME",
 			about: "ABOUT",
 			team: "TEAM",
-			sponsors: "SPONSORS"
+			events: "EVENTS",
+			form: "FORM"
 		},
 		labels: {
 			language: "LANGUAGE"
@@ -41,6 +43,29 @@ const translations = {
 			contact: "CONTACT",
 			imprint: "IMPRINT",
 			legal: "LEGAL"
+		}
+	},
+	ua: {
+		nav: {
+			home: "ГОЛОВНА",
+			about: "ПРО НАС",
+			team: "КОМАНДА",
+			events: "ПОДІЇ",
+			form: "ФОРМА"
+		},
+		labels: {
+			language: "МОВА"
+		},
+		hero: {
+			title: "ENTER THE FIGHT WITH PRECISION AND PRESENCE",
+			copy: "Змагальний фокус, чітка ідентичність і сцена для команди, якій не потрібно кричати, щоб виділятися.",
+			cta: "ДІЗНАТИСЯ БІЛЬШЕ"
+		},
+		footer: {
+			socials: "СОЦМЕРЕЖІ",
+			contact: "КОНТАКТИ",
+			imprint: "ВИХІДНІ ДАНІ",
+			legal: "ПРАВОВА ІНФОРМАЦІЯ"
 		}
 	}
 };
