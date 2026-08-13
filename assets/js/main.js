@@ -45,27 +45,27 @@ const translations = {
 			legal: "LEGAL"
 		}
 	},
-	ua: {
+	jp: {
 		nav: {
-			home: "ГОЛОВНА",
-			about: "ПРО НАС",
-			team: "КОМАНДА",
-			events: "ПОДІЇ",
-			form: "ФОРМА"
+			home: "ホーム",
+			about: "概要",
+			team: "チーム",
+			events: "イベント",
+			form: "フォーム"
 		},
 		labels: {
-			language: "МОВА"
+			language: "言語"
 		},
 		hero: {
 			title: "ENTER THE FIGHT WITH PRECISION AND PRESENCE",
-			copy: "Змагальний фокус, чітка ідентичність і сцена для команди, якій не потрібно кричати, щоб виділятися.",
-			cta: "ДІЗНАТИСЯ БІЛЬШЕ"
+			copy: "競技への集中、明確なアイデンティティ、そして声を張らずとも存在感を放つチームのための舞台。",
+			cta: "詳しく見る"
 		},
 		footer: {
-			socials: "СОЦМЕРЕЖІ",
-			contact: "КОНТАКТИ",
-			imprint: "ВИХІДНІ ДАНІ",
-			legal: "ПРАВОВА ІНФОРМАЦІЯ"
+			socials: "ソーシャル",
+			contact: "お問い合わせ",
+			imprint: "運営情報",
+			legal: "法的情報"
 		}
 	}
 };
