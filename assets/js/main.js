@@ -11,6 +11,7 @@ const translations = {
 			language: "SPRACHE"
 		},
 		hero: {
+			motto: "ERHEBE DICH",
 			title: "ENTER THE FIGHT WITH PRECISION AND PRESENCE",
 			copy: "Wettbewerbsfokus, klare Identität und eine Bühne für ein Team, das nicht laut wirken muss, um aufzufallen.",
 			cta: "MEHR ENTDECKEN"
@@ -34,6 +35,7 @@ const translations = {
 			language: "LANGUAGE"
 		},
 		hero: {
+			motto: "RISE",
 			title: "ENTER THE FIGHT WITH PRECISION AND PRESENCE",
 			copy: "Competitive focus, a clear identity, and a stage for a team that does not need to shout to stand out.",
 			cta: "DISCOVER MORE"
@@ -57,6 +59,7 @@ const translations = {
 			language: "言語"
 		},
 		hero: {
+			motto: "立ち上がれ",
 			title: "ENTER THE FIGHT WITH PRECISION AND PRESENCE",
 			copy: "競技への集中、明確なアイデンティティ、そして声を張らずとも存在感を放つチームのための舞台。",
 			cta: "詳しく見る"
