@@ -3,8 +3,8 @@ const translations = {
 		nav: {
 			home: "START",
 			about: "ÜBER",
-			team: "TEAM",
-			events: "VERANSTALTUNGEN",
+			team: "GAMES",
+			events: "EVENTS",
 			form: "FORMULAR"
 		},
 		labels: {
@@ -27,7 +27,7 @@ const translations = {
 		nav: {
 			home: "HOME",
 			about: "ABOUT",
-			team: "TEAM",
+			team: "GAMES",
 			events: "EVENTS",
 			form: "FORM"
 		},
@@ -51,7 +51,7 @@ const translations = {
 		nav: {
 			home: "ホーム",
 			about: "概要",
-			team: "チーム",
+			team: "ゲーム",
 			events: "イベント",
 			form: "フォーム"
 		},
@@ -83,7 +83,9 @@ const currentLanguage = document.querySelector("[data-current-language]");
 const languageButtons = document.querySelectorAll("[data-language]");
 const i18nNodes = document.querySelectorAll("[data-i18n]");
 
-let activeLanguage = "de";
+const languageStorageKey = "rayven-language";
+const storedLanguage = window.localStorage.getItem(languageStorageKey);
+let activeLanguage = translations[storedLanguage] ? storedLanguage : "de";
 
 const applyTranslations = (language) => {
 	const dictionary = translations[language];
@@ -105,6 +107,7 @@ const applyTranslations = (language) => {
 
 	document.documentElement.lang = language;
 	activeLanguage = language;
+	window.localStorage.setItem(languageStorageKey, language);
 };
 
 const closeLanguageMenu = () => {
