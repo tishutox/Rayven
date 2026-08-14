@@ -348,6 +348,119 @@ main {
 	box-shadow: 0 -18px 36px rgba(0, 0, 0, 0.24);
 }
 
+.cookie-trigger {
+	position: fixed;
+	left: 24px;
+	bottom: 24px;
+	z-index: 60;
+	display: grid;
+	place-items: center;
+	width: 52px;
+	height: 52px;
+	border: 1px solid rgba(255, 255, 255, 0.24);
+	border-radius: 50%;
+	background: #000000;
+	color: var(--text-inverse);
+	box-shadow: 0 12px 28px rgba(0, 0, 0, 0.24);
+	cursor: pointer;
+	transition: transform var(--transition), background-color var(--transition);
+}
+
+.cookie-trigger:hover,
+.cookie-trigger:focus-visible {
+	background: #1f1f1f;
+	transform: translateY(-3px);
+}
+
+.cookie-trigger svg {
+	width: 24px;
+	height: 24px;
+}
+
+.cookie-modal {
+	position: fixed;
+	inset: 0;
+	z-index: 70;
+	display: grid;
+	place-items: center;
+	padding: 24px;
+	background: rgba(10, 10, 10, 0.58);
+	opacity: 0;
+	visibility: hidden;
+	pointer-events: none;
+	transition: opacity var(--transition), visibility var(--transition);
+}
+
+.cookie-modal.is-open {
+	opacity: 1;
+	visibility: visible;
+	pointer-events: auto;
+}
+
+.cookie-modal-content {
+	width: min(560px, 100%);
+	max-height: 100%;
+	overflow-y: auto;
+	padding: 36px;
+	border-radius: 25px;
+	background: var(--surface-strong);
+	font-family: "Noto Sans JP", sans-serif;
+	box-shadow: 0 24px 70px rgba(0, 0, 0, 0.28);
+	transform: translateY(18px);
+	transition: transform var(--transition);
+}
+
+.cookie-modal.is-open .cookie-modal-content {
+	transform: translateY(0);
+}
+
+.cookie-modal-content h2 {
+	margin: 0;
+	font-size: clamp(1.7rem, 4vw, 2.4rem);
+	line-height: 1.1;
+}
+
+.cookie-modal-intro {
+	margin: 18px 0 28px;
+	color: var(--text-soft);
+	line-height: 1.6;
+}
+
+.cookie-modal-section {
+	padding-top: 20px;
+	border-top: 1px solid var(--line-dark);
+}
+
+.cookie-modal-section h3 {
+	margin: 0 0 8px;
+	font-size: 0.84rem;
+	letter-spacing: 0.08em;
+}
+
+.cookie-modal-section p {
+	margin: 0 0 20px;
+	color: var(--text-soft);
+	font-size: 0.95rem;
+	line-height: 1.6;
+}
+
+.cookie-modal-close {
+	min-height: 46px;
+	padding: 0 20px;
+	border: 0;
+	border-radius: 25px;
+	background: #000000;
+	color: var(--text-inverse);
+	font-family: "Noto Sans JP", sans-serif;
+	letter-spacing: 0.08em;
+	cursor: pointer;
+}
+
+.cookie-modal-close:hover,
+.cookie-modal-close:focus-visible {
+	background: #1f1f1f;
+}
+
 .footer-nav {
 	gap: 22px;
 	min-height: 54px;
@@ -518,6 +631,19 @@ main {
 }
 
 @media (max-width: 580px) {
+	.cookie-trigger {
+		left: 16px;
+		bottom: 16px;
+	}
+
+	.cookie-modal {
+		padding: 16px;
+	}
+
+	.cookie-modal-content {
+		padding: 28px 24px;
+	}
+
 	.header-branding {
 		gap: 10px;
 	}
