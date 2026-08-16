@@ -100,8 +100,21 @@
 
 	<div class="cookie-modal" role="dialog" aria-modal="true" aria-labelledby="cookie-modal-title" aria-hidden="true" data-cookie-modal>
 		<div class="cookie-modal-content">
-			<h2 id="cookie-modal-title" data-i18n="cookie.title">COOKIE-EINSTELLUNGEN</h2>
-			<p class="cookie-modal-intro" data-i18n="cookie.intro">Hier findest du Informationen dazu, wie Rayven Cookies und ähnliche Technologien verwendet.</p>
+			<div class="cookie-modal-header">
+				<div class="cookie-modal-title">
+					<i data-lucide="cookie" aria-hidden="true"></i>
+					<h2 id="cookie-modal-title" data-i18n="cookie.title">COOKIE-EINSTELLUNGEN</h2>
+				</div>
+				<button class="cookie-modal-dismiss" type="button" aria-label="Cookie-Einstellungen schließen" data-cookie-close>
+					<i data-lucide="x" aria-hidden="true"></i>
+				</button>
+			</div>
+
+			<div class="cookie-modal-rule"></div>
+			<div class="cookie-modal-notice">
+				<i data-lucide="info" aria-hidden="true"></i>
+				<p data-i18n="cookie.intro">Hier findest du Informationen dazu, wie Rayven Cookies und ähnliche Technologien verwendet.</p>
+			</div>
 
 			<section class="cookie-modal-section">
 				<h3 data-i18n="cookie.purposeTitle">WARUM WIR COOKIES VERWENDEN</h3>
@@ -118,7 +131,6 @@
 				<p data-i18n="cookie.control">Du kannst gespeicherte Website-Daten jederzeit über die Einstellungen deines Browsers löschen. Wenn du eine andere Sprache auswählst, wird die neue Auswahl automatisch übernommen.</p>
 			</section>
 
-			<button class="cookie-modal-close" type="button" data-cookie-close data-i18n="cookie.close">SCHLIESSEN</button>
 		</div>
 	</div>
 
