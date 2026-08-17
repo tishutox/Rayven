@@ -403,8 +403,8 @@ main {
 	overflow-y: auto;
 	padding: 32px 36px 36px;
 	border: 1px solid rgba(20, 20, 20, 0.1);
-	border-top: 4px solid #AC0000;
-	border-radius: 10px;
+	border-top: 4px solid #FFFFFF;
+	border-radius: 0;
 	background: #000000;
 	color: var(--text-inverse);
 	font-family: "Noto Sans JP", sans-serif;
@@ -480,9 +480,9 @@ main {
 	gap: 14px;
 	margin: 0 0 28px;
 	padding: 18px 20px;
-	border: 1px solid rgba(172, 0, 0, 0.62);
-	border-radius: 9px;
-	background: rgba(172, 0, 0, 0.12);
+	border: 1px solid rgba(255, 255, 255, 0.62);
+	border-radius: 0;
+	background: rgba(255, 255, 255, 0.08);
 	color: var(--text-inverse);
 }
 
@@ -491,7 +491,7 @@ main {
 	width: 21px;
 	height: 21px;
 	margin-top: 0.2rem;
-	color: #AC0000;
+	color: #FFFFFF;
 }
 
 .cookie-modal-notice p {
