@@ -32,6 +32,26 @@ const translations = {
 			controlTitle: "DEINE AUSWAHL",
 			control: "Du kannst gespeicherte Website-Daten jederzeit über die Einstellungen deines Browsers löschen. Wenn du eine andere Sprache auswählst, wird die neue Auswahl automatisch übernommen.",
 			close: "SCHLIESSEN"
+		},
+		about: {
+			breadcrumbHome: "START",
+			breadcrumbCurrent: "ÜBER",
+			eyebrow: "WER WIR SIND",
+			title: "ÜBER RAYVEN",
+			lead: "Rayven ist mehr als ein Name auf einem Trikot. Wir sind ein Kollektiv aus Spielern, Kreativen und Unterstützern, die sich einer Idee verschrieben haben: Präsenz zeigen, ohne laut sein zu müssen.",
+			storyTitle: "UNSERE GESCHICHTE",
+			storyText: "Rayven entstand aus dem Wunsch, eine eSports-Identität zu schaffen, die genauso viel Wert auf Ästhetik wie auf Leistung legt. Aus kleinen Trainingssessions wurde eine Gemeinschaft, die heute für Präzision, Haltung und einen klaren visuellen Ausdruck steht.",
+			storyText2: "Jedes Mitglied bringt seine eigene Geschichte mit – vom ersten Ranked-Match bis zum internationalen Turnier. Was uns verbindet, ist der Anspruch, gemeinsam über uns hinauszuwachsen.",
+			photoCaption: "Das ist Rayven.",
+			valuesTitle: "WORAN WIR GLAUBEN",
+			value1Title: "PHILOSOPHIE",
+			value1Text: "Klarheit vor Lautstärke. Wir lassen unsere Leistung und unser Auftreten sprechen.",
+			value2Title: "GEMEINSCHAFT",
+			value2Text: "Ein Rudel ist nur so stark wie sein Zusammenhalt. Wir wachsen gemeinsam, on und off Server.",
+			value3Title: "ZUKUNFT",
+			value3Text: "Wir bauen an einer Marke, die über einzelne Turniere hinaus Bestand hat.",
+			ctaTitle: "WERDE TEIL DES RUDELS",
+			ctaText: "Ob als Spieler, Partner oder Fan – wir freuen uns, von dir zu hören."
 		}
 	},
 	en: {
@@ -67,6 +87,26 @@ const translations = {
 			controlTitle: "YOUR CHOICE",
 			control: "You can delete stored website data at any time through your browser settings. When you choose another language, your new preference is applied automatically.",
 			close: "CLOSE"
+		},
+		about: {
+			breadcrumbHome: "HOME",
+			breadcrumbCurrent: "ABOUT",
+			eyebrow: "WHO WE ARE",
+			title: "ABOUT RAYVEN",
+			lead: "Rayven is more than a name on a jersey. We are a collective of players, creatives, and supporters devoted to one idea: showing presence without needing to shout.",
+			storyTitle: "OUR STORY",
+			storyText: "Rayven was born from the desire to build an esports identity that values aesthetics as much as performance. What started as small training sessions grew into a community that now stands for precision, posture, and a clear visual voice.",
+			storyText2: "Every member brings their own story, from their first ranked match to international tournaments. What connects us is the ambition to grow beyond ourselves, together.",
+			photoCaption: "This is Rayven.",
+			valuesTitle: "WHAT WE BELIEVE IN",
+			value1Title: "PHILOSOPHY",
+			value1Text: "Clarity over volume. We let our performance and our presence speak.",
+			value2Title: "COMMUNITY",
+			value2Text: "A pack is only as strong as its bond. We grow together, on and off server.",
+			value3Title: "FUTURE",
+			value3Text: "We are building a brand that outlasts any single tournament.",
+			ctaTitle: "JOIN THE PACK",
+			ctaText: "Whether as a player, partner, or fan, we would love to hear from you."
 		}
 	},
 	jp: {
@@ -102,6 +142,26 @@ const translations = {
 			controlTitle: "設定の管理",
 			control: "保存されたウェブサイトデータは、ブラウザの設定からいつでも削除できます。別の言語を選択すると、新しい設定が自動的に適用されます。",
 			close: "閉じる"
+		},
+		about: {
+			breadcrumbHome: "ホーム",
+			breadcrumbCurrent: "概要",
+			eyebrow: "私たちについて",
+			title: "RAYVENについて",
+			lead: "Rayvenはユニフォームに書かれた名前以上の存在です。私たちは、大声を出さずに存在感を示すという一つの理念に情熱を注ぐ、選手・クリエイター・サポーターの集団です。",
+			storyTitle: "私たちの歩み",
+			storyText: "Rayvenは、パフォーマンスと同じくらい美意識を大切にするeスポーツのアイデンティティを築きたいという想いから生まれました。小さな練習セッションから始まり、今では精密さと姿勢、明確なビジュアル表現を象徴するコミュニティへと成長しました。",
+			storyText2: "メンバーそれぞれが、初めてのランクマッチから国際大会まで、自分自身の物語を持っています。私たちを繋ぐのは、共に自分たちを超えていこうという志です。",
+			photoCaption: "これがRayvenです。",
+			valuesTitle: "私たちが大切にすること",
+			value1Title: "哲学",
+			value1Text: "声の大きさより明確さを。パフォーマンスと存在感で語ります。",
+			value2Title: "コミュニティ",
+			value2Text: "群れの強さは絆の強さ。オンでもオフでも共に成長します。",
+			value3Title: "未来",
+			value3Text: "一つの大会にとどまらないブランドを築いています。",
+			ctaTitle: "群れに加わろう",
+			ctaText: "選手として、パートナーとして、あるいはファンとして。あなたの声をお待ちしています。"
 		}
 	}
 };
