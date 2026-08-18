@@ -732,6 +732,14 @@ body.page-about {
 	color: var(--text-inverse);
 }
 
+.page-about .about-hero,
+.page-about .about-story,
+.page-about .about-values,
+.page-about .about-cta,
+.page-about .about-main {
+	font-family: "Noto Sans JP", sans-serif;
+}
+
 .about-main {
 	height: auto;
 	background: #000000;
@@ -739,10 +747,7 @@ body.page-about {
 
 .about-hero {
 	padding: calc(var(--header-height) + 64px) 24px 72px;
-	background:
-		radial-gradient(circle at 15% 20%, rgba(184, 154, 98, 0.16), transparent 40%),
-		radial-gradient(circle at 85% 0%, rgba(109, 31, 42, 0.22), transparent 45%),
-		#000000;
+	background: #000000;
 }
 
 .about-hero-inner {
@@ -773,6 +778,7 @@ body.page-about {
 }
 
 .about-hero .eyebrow {
+	font-family: "Noto Sans JP", sans-serif;
 	font-size: clamp(0.95rem, 2vw, 1.15rem);
 	color: var(--accent);
 	letter-spacing: 0.3em;
@@ -780,9 +786,10 @@ body.page-about {
 
 .about-hero h1 {
 	margin: 0;
-	font-family: "Zen Old Mincho", serif;
+	font-family: "Noto Sans JP", sans-serif;
 	font-size: clamp(2.6rem, 7vw, 5rem);
 	line-height: 1.05;
+	letter-spacing: 0.02em;
 }
 
 .about-lead {
@@ -795,6 +802,7 @@ body.page-about {
 
 .about-story {
 	padding: 40px 24px 100px;
+	background: #000000;
 }
 
 .about-story-inner {
@@ -806,62 +814,76 @@ body.page-about {
 	align-items: center;
 }
 
-.about-photo-collage {
+.about-photo-grid {
 	position: relative;
-	min-height: 380px;
+	width: min(360px, 82vw);
+	aspect-ratio: 1 / 1.25;
+	margin: 0 auto;
 }
 
-.photo-card {
+.photo-frame {
 	position: absolute;
+	width: 68%;
+	margin: 0;
+	padding: 10px 10px 18px;
+	border: 1px solid rgba(255, 255, 255, 0.16);
+	background: #000000;
+	box-shadow: 0 24px 50px rgba(0, 0, 0, 0.5);
+}
+
+.photo-frame:first-child {
+	left: 0;
+	bottom: 0;
+	z-index: 2;
+	transform: rotate(-7deg);
+}
+
+.photo-frame-logo {
+	right: 0;
+	top: 0;
+	z-index: 1;
+	transform: rotate(7deg);
+}
+
+.photo-frame-img {
+	aspect-ratio: 1 / 1;
 	overflow: hidden;
-	border: 1px solid rgba(255, 255, 255, 0.14);
-	box-shadow: 0 30px 60px rgba(0, 0, 0, 0.45);
-	background: #111111;
+	background: #0a0a0a;
 }
 
-.photo-card-main {
-	inset: 0 60px 60px 0;
-	transform: rotate(-2deg);
-}
-
-.photo-card-main img {
+.photo-frame-img img {
 	width: 100%;
 	height: 100%;
 	object-fit: cover;
 	display: block;
 }
 
-.photo-card-accent {
-	right: 0;
-	bottom: 0;
-	width: 220px;
-	padding: 22px 18px;
+.photo-frame-logo .photo-frame-img {
 	display: grid;
-	justify-items: center;
-	gap: 12px;
-	text-align: center;
-	background: #000000;
-	border-top: 3px solid var(--accent);
-	transform: rotate(3deg);
+	place-items: center;
+	padding: 28px;
 }
 
-.photo-card-accent img {
-	width: 56px;
-	height: 56px;
+.photo-frame-logo .photo-frame-img img {
+	width: 60%;
+	height: 60%;
 	object-fit: contain;
 	filter: brightness(0) invert(1);
 }
 
-.photo-card-accent p {
-	margin: 0;
-	font-family: "Zen Old Mincho", serif;
-	font-size: 1rem;
-	color: rgba(255, 255, 255, 0.86);
+.photo-frame figcaption {
+	margin-top: 14px;
+	font-family: "Noto Sans JP", sans-serif;
+	font-size: 0.92rem;
+	letter-spacing: 0.04em;
+	line-height: 1.4;
+	text-align: center;
+	color: rgba(255, 255, 255, 0.82);
 }
 
 .about-story-text h2 {
 	margin: 0 0 18px;
-	font-family: "Zen Old Mincho", serif;
+	font-family: "Noto Sans JP", sans-serif;
 	font-size: clamp(1.8rem, 3vw, 2.4rem);
 	letter-spacing: 0.04em;
 }
@@ -875,7 +897,7 @@ body.page-about {
 
 .about-values {
 	padding: 40px 24px 100px;
-	background: rgba(255, 255, 255, 0.03);
+	background: #000000;
 	border-top: 1px solid rgba(255, 255, 255, 0.08);
 	border-bottom: 1px solid rgba(255, 255, 255, 0.08);
 }
@@ -887,7 +909,7 @@ body.page-about {
 
 .about-values h2 {
 	margin: 0 0 40px;
-	font-family: "Zen Old Mincho", serif;
+	font-family: "Noto Sans JP", sans-serif;
 	font-size: clamp(1.8rem, 3vw, 2.4rem);
 	text-align: center;
 }
@@ -935,9 +957,7 @@ body.page-about {
 .about-cta {
 	padding: 90px 24px 110px;
 	text-align: center;
-	background:
-		linear-gradient(180deg, rgba(109, 31, 42, 0.16), transparent),
-		#000000;
+	background: #000000;
 }
 
 .about-cta-inner {
@@ -950,7 +970,7 @@ body.page-about {
 
 .about-cta h2 {
 	margin: 0;
-	font-family: "Zen Old Mincho", serif;
+	font-family: "Noto Sans JP", sans-serif;
 	font-size: clamp(1.8rem, 4vw, 2.6rem);
 }
 
@@ -966,20 +986,14 @@ body.page-about {
 		gap: 48px;
 	}
 
-	.about-photo-collage {
-		min-height: 320px;
-		max-width: 420px;
+	.about-photo-grid {
+		width: min(340px, 78vw);
 		margin: 0 auto;
 	}
 }
 
 @media (max-width: 540px) {
-	.photo-card-main {
-		inset: 0 40px 40px 0;
-	}
-
-	.photo-card-accent {
-		width: 170px;
-		padding: 16px 14px;
+	.about-photo-grid {
+		width: min(280px, 76vw);
 	}
 }
