@@ -42,8 +42,8 @@ const translations = {
 			storyTitle: "UNSERE GESCHICHTE",
 			storyText: "Rayven ist das eSports-Team der Technischen Hochschule Augsburg. Entstanden im Fachschaftsraum der TH, hat sich aus gemeinsamen Trainingssessions eine Gemeinschaft entwickelt, die für Präzision, Haltung und einen klaren visuellen Ausdruck steht.",
 			storyText2: "Jedes Mitglied bringt seine eigene Geschichte mit – vom ersten Ranked-Match bis zum Turnier im Namen der TH Augsburg. Was uns verbindet, ist der Anspruch, gemeinsam über uns hinauszuwachsen.",
-			photoCaption1: "Ahri",
-			photoCaption2: "Das ist Rayven.",
+			photoCaption1: "Valorant",
+			photoCaption2: "League",
 			valuesTitle: "WORAN WIR GLAUBEN",
 			value1Title: "PHILOSOPHIE",
 			value1Text: "Klarheit vor Lautstärke. Wir lassen unsere Leistung und unser Auftreten sprechen.",
@@ -98,8 +98,8 @@ const translations = {
 			storyTitle: "OUR STORY",
 			storyText: "Rayven is the esports team of TH Augsburg. Born in the student council room of the university, small training sessions grew into a community that now stands for precision, posture, and a clear visual voice.",
 			storyText2: "Every member brings their own story, from their first ranked match to tournaments played in the name of TH Augsburg. What connects us is the ambition to grow beyond ourselves, together.",
-			photoCaption1: "Ahri",
-			photoCaption2: "This is Rayven.",
+			photoCaption1: "Valorant",
+			photoCaption2: "League",
 			valuesTitle: "WHAT WE BELIEVE IN",
 			value1Title: "PHILOSOPHY",
 			value1Text: "Clarity over volume. We let our performance and our presence speak.",
@@ -107,7 +107,7 @@ const translations = {
 			value2Text: "A pack is only as strong as its bond. We grow together, on and off server.",
 			value3Title: "FUTURE",
 			value3Text: "We are building a brand that outlasts any single tournament.",
-			ctaTitle: "JOIN THE PACK",
+			ctaTitle: "BECOME PART OF THE SWARM",
 			ctaText: "Whether as a player, partner, or fan, we would love to hear from you."
 		}
 	},
@@ -154,8 +154,8 @@ const translations = {
 			storyTitle: "私たちの歩み",
 			storyText: "RayvenはTH Augsburgのeスポーツチームです。大学の学生自治会室で生まれ、小さな練習セッションから始まり、今では精密さと姿勢、明確なビジュアル表現を象徴するコミュニティへと成長しました。",
 			storyText2: "メンバーそれぞれが、初めてのランクマッチからTH Augsburgの名を掘けた大会まで、自分自身の物語を持っています。私たちを繋ぐのは、共に自分たちを超えていこうという志です。",
-			photoCaption1: "Ahri",
-			photoCaption2: "これがRayvenです。",
+			photoCaption1: "Valorant",
+			photoCaption2: "League",
 			valuesTitle: "私たちが大切にすること",
 			value1Title: "哲学",
 			value1Text: "声の大きさより明確さを。パフォーマンスと存在感で語ります。",
@@ -163,7 +163,7 @@ const translations = {
 			value2Text: "群れの強さは絆の強さ。オンでもオフでも共に成長します。",
 			value3Title: "未来",
 			value3Text: "一つの大会にとどまらないブランドを築いています。",
-			ctaTitle: "群れに加わろう",
+			ctaTitle: "群れの一員になろう",
 			ctaText: "選手として、パートナーとして、あるいはファンとして。あなたの声をお待ちしています。"
 		}
 	}
@@ -181,6 +181,11 @@ const i18nNodes = document.querySelectorAll("[data-i18n]");
 const cookieTrigger = document.querySelector("[data-cookie-trigger]");
 const cookieModal = document.querySelector("[data-cookie-modal]");
 const cookieClose = document.querySelector("[data-cookie-close]");
+const imageTriggers = document.querySelectorAll("[data-image-trigger]");
+const imageModal = document.querySelector("[data-image-modal]");
+const imagePreview = document.querySelector("[data-image-preview]");
+const imageCaption = document.querySelector("[data-image-caption]");
+const imageClose = document.querySelector("[data-image-close]");
 
 const languageStorageKey = "rayven-language";
 const storedLanguage = window.localStorage.getItem(languageStorageKey);
@@ -227,6 +232,27 @@ const setCookieModalState = (isOpen) => {
 	}
 };
 
+const setImageModalState = (isOpen, trigger = null) => {
+	if (!imageModal) {
+		return;
+	}
+
+	if (isOpen && trigger) {
+		const image = trigger.querySelector("img");
+		const caption = trigger.querySelector("figcaption");
+		imagePreview.src = image.src;
+		imagePreview.alt = image.alt;
+		imageCaption.textContent = caption.textContent;
+		imageModal.classList.add("is-open");
+		imageModal.setAttribute("aria-hidden", "false");
+		imageClose.focus();
+		return;
+	}
+
+	imageModal.classList.remove("is-open");
+	imageModal.setAttribute("aria-hidden", "true");
+};
+
 const setMenuState = (isOpen) => {
 	body.classList.toggle("menu-open", isOpen);
 	pageShell.classList.toggle("menu-open", isOpen);
@@ -266,6 +292,7 @@ document.addEventListener("keydown", (event) => {
 		closeLanguageMenu();
 		setMenuState(false);
 		setCookieModalState(false);
+		setImageModalState(false);
 	}
 });
 
@@ -276,6 +303,25 @@ cookieModal.addEventListener("click", (event) => {
 		setCookieModalState(false);
 	}
 });
+
+imageTriggers.forEach((trigger) => {
+	trigger.addEventListener("click", () => setImageModalState(true, trigger));
+	trigger.addEventListener("keydown", (event) => {
+		if (event.key === "Enter" || event.key === " ") {
+			event.preventDefault();
+			setImageModalState(true, trigger);
+		}
+	});
+});
+
+if (imageModal) {
+	imageClose.addEventListener("click", () => setImageModalState(false));
+	imageModal.addEventListener("click", (event) => {
+		if (event.target === imageModal) {
+			setImageModalState(false);
+		}
+	});
+}
 
 setMenuState(false);
 applyTranslations(activeLanguage);

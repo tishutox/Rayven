@@ -92,17 +92,17 @@
 			<section class="about-story">
 				<div class="about-story-inner">
 					<div class="about-photo-grid">
-						<figure class="photo-frame">
+						<figure class="photo-frame" role="button" tabindex="0" data-image-trigger aria-label="Valorant Bild vergrößern">
 							<div class="photo-frame-img">
-								<img src="assets/img/hero-bg.jpg" alt="Fachschaftsraum der TH Augsburg">
+								<img src="assets/img/pic-1.jpg" alt="Rayven Momentaufnahme">
 							</div>
-							<figcaption data-i18n="about.photoCaption1">Ahri</figcaption>
+							<figcaption data-i18n="about.photoCaption1">Valorant</figcaption>
 						</figure>
-						<figure class="photo-frame photo-frame-logo">
+						<figure class="photo-frame" role="button" tabindex="0" data-image-trigger aria-label="League Bild vergrößern">
 							<div class="photo-frame-img">
-								<img src="assets/logo/logo.png" alt="Rayven Emblem">
+								<img src="assets/img/pic-2.jpg" alt="Rayven Momentaufnahme">
 							</div>
-							<figcaption data-i18n="about.photoCaption2">Das ist Rayven.</figcaption>
+							<figcaption data-i18n="about.photoCaption2">League</figcaption>
 						</figure>
 					</div>
 					<div class="about-story-text">
@@ -113,32 +113,9 @@
 				</div>
 			</section>
 
-			<section class="about-values">
-				<div class="about-values-inner">
-					<h2 data-i18n="about.valuesTitle">WORAN WIR GLAUBEN</h2>
-					<div class="value-grid">
-						<article class="value-card">
-							<i data-lucide="flame"></i>
-							<h3 data-i18n="about.value1Title">PHILOSOPHIE</h3>
-							<p data-i18n="about.value1Text">Klarheit vor Lautstärke. Wir lassen unsere Leistung und unser Auftreten sprechen.</p>
-						</article>
-						<article class="value-card">
-							<i data-lucide="users"></i>
-							<h3 data-i18n="about.value2Title">GEMEINSCHAFT</h3>
-							<p data-i18n="about.value2Text">Ein Rudel ist nur so stark wie sein Zusammenhalt. Wir wachsen gemeinsam, on und off Server.</p>
-						</article>
-						<article class="value-card">
-							<i data-lucide="compass"></i>
-							<h3 data-i18n="about.value3Title">ZUKUNFT</h3>
-							<p data-i18n="about.value3Text">Wir bauen an einer Marke, die über einzelne Turniere hinaus Bestand hat.</p>
-						</article>
-					</div>
-				</div>
-			</section>
-
 			<section class="about-cta">
 				<div class="about-cta-inner">
-					<h2 data-i18n="about.ctaTitle">WERDE TEIL DES RUDELS</h2>
+					<h2 data-i18n="about.ctaTitle">WERDE TEIL DES SCHWARMS</h2>
 					<p data-i18n="about.ctaText">Ob als Spieler, Partner oder Fan – wir freuen uns, von dir zu hören.</p>
 					<a class="hero-cta" href="https://opnform.com/forms/contact-form-cu6ht2" data-i18n="nav.form">FORMULAR</a>
 				</div>
@@ -191,6 +168,16 @@
 				<p data-i18n="cookie.control">Du kannst gespeicherte Website-Daten jederzeit über die Einstellungen deines Browsers löschen. Wenn du eine andere Sprache auswählst, wird die neue Auswahl automatisch übernommen.</p>
 			</section>
 
+		</div>
+	</div>
+
+	<div class="image-modal" role="dialog" aria-modal="true" aria-labelledby="image-modal-caption" aria-hidden="true" data-image-modal>
+		<div class="image-modal-content">
+			<button class="image-modal-close" type="button" aria-label="Bild schließen" data-image-close>
+				<i data-lucide="x" aria-hidden="true"></i>
+			</button>
+			<img class="image-modal-preview" src="" alt="" data-image-preview>
+			<p class="image-modal-caption" id="image-modal-caption" data-image-caption></p>
 		</div>
 	</div>
 
