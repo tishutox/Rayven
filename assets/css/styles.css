@@ -802,7 +802,7 @@ body.page-about {
 }
 
 .about-story {
-	padding: 24px 24px 72px;
+	padding: 10px 24px 72px;
 	background: #000000;
 }
 
@@ -982,6 +982,10 @@ body.page-about {
 }
 
 @media (max-width: 860px) {
+	.about-story {
+		padding: 8px 20px 56px;
+	}
+
 	.about-story-inner {
 		grid-template-columns: 1fr;
 		gap: 48px;
