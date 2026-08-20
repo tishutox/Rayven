@@ -794,7 +794,7 @@ body.page-about {
 .about-hero .eyebrow {
 	font-family: "Noto Sans JP", sans-serif;
 	font-size: clamp(0.95rem, 2vw, 1.15rem);
-	color: #ac0000;
+	color: #FFB7C5;
 	letter-spacing: 0.3em;
 }
 
@@ -1004,7 +1004,7 @@ body.page-about {
 
 @media (max-width: 860px) {
 	.about-story {
-		padding: 4px 20px 56px;
+		padding: 4px 20px 32px;
 	}
 
 	.about-cta {
