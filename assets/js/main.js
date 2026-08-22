@@ -33,6 +33,19 @@ const translations = {
 			control: "Du kannst gespeicherte Website-Daten jederzeit über die Einstellungen deines Browsers löschen. Wenn du eine andere Sprache auswählst, wird die neue Auswahl automatisch übernommen.",
 			close: "SCHLIESSEN"
 		},
+		imprint: {
+			title: "IMPRESSUM",
+			provider: "ANGABEN GEMÄSS § 5 TMG",
+			city: "86316 FRIEDBERG",
+			contact: "KONTAKT",
+			emailLabel: "E-MAIL:",
+			disclaimer: "HAFTUNGSAUSSCHLUSS",
+			disclaimerText: "Die Inhalte dieser Website wurden mit größtmöglicher Sorgfalt erstellt. Für die Richtigkeit, Vollständigkeit und Aktualität der Inhalte können wir jedoch keine Gewähr übernehmen.",
+			externalLinks: "EXTERNE LINKS",
+			externalLinksText: "Diese Website enthält Links zu externen Websites Dritter, auf deren Inhalte wir keinen Einfluss haben. Für die Inhalte der verlinkten Seiten ist stets der jeweilige Anbieter oder Betreiber der Seiten verantwortlich.",
+			copyright: "URHEBERRECHT",
+			copyrightText: "Die durch die Seitenbetreiber erstellten Inhalte und Werke auf dieser Website unterliegen dem deutschen Urheberrecht. Die Vervielfältigung, Bearbeitung, Verbreitung und jede Art der Verwertung außerhalb der Grenzen des Urheberrechts bedürfen der schriftlichen Zustimmung des jeweiligen Autors bzw. Erstellers."
+		},
 		about: {
 			breadcrumbHome: "START",
 			breadcrumbCurrent: "ÜBER",
@@ -88,6 +101,19 @@ const translations = {
 			controlTitle: "YOUR CHOICE",
 			control: "You can delete stored website data at any time through your browser settings. When you choose another language, your new preference is applied automatically.",
 			close: "CLOSE"
+		},
+		imprint: {
+			title: "IMPRINT",
+			provider: "INFORMATION ACCORDING TO SECTION 5 TMG",
+			city: "86316 FRIEDBERG",
+			contact: "CONTACT",
+			emailLabel: "EMAIL:",
+			disclaimer: "DISCLAIMER",
+			disclaimerText: "The contents of this website have been created with the greatest possible care. However, we cannot guarantee the accuracy, completeness, or timeliness of the content.",
+			externalLinks: "EXTERNAL LINKS",
+			externalLinksText: "This website contains links to external third-party websites whose content is beyond our control. The respective provider or operator of each linked website is always responsible for its content.",
+			copyright: "COPYRIGHT",
+			copyrightText: "The content and works created by the site operators on this website are subject to German copyright law. Reproduction, editing, distribution, and any kind of exploitation beyond the limits of copyright law require the written consent of the respective author or creator."
 		},
 		about: {
 			breadcrumbHome: "HOME",
@@ -145,6 +171,19 @@ const translations = {
 			control: "保存されたウェブサイトデータは、ブラウザの設定からいつでも削除できます。別の言語を選択すると、新しい設定が自動的に適用されます。",
 			close: "閉じる"
 		},
+		imprint: {
+			title: "運営情報",
+			provider: "ドイツ電気通信法第5条に基づく事業者情報",
+			city: "86316 フリートベルク",
+			contact: "お問い合わせ",
+			emailLabel: "メール:",
+			disclaimer: "免責事項",
+			disclaimerText: "このウェブサイトのコンテンツは、細心の注意を払って作成されています。ただし、内容の正確性、完全性、最新性を保証するものではありません。",
+			externalLinks: "外部リンク",
+			externalLinksText: "このウェブサイトには、当方が内容を管理できない第三者の外部サイトへのリンクが含まれています。リンク先の内容については、各サイトの提供者または運営者が責任を負います。",
+			copyright: "著作権",
+			copyrightText: "このウェブサイト上でサイト運営者が作成したコンテンツおよび作品は、ドイツの著作権法によって保護されています。著作権法の範囲を超える複製、編集、配布、その他の利用には、各著作者または制作者の書面による同意が必要です。"
+		},
 		about: {
 			breadcrumbHome: "ホーム",
 			breadcrumbCurrent: "概要",
@@ -181,6 +220,9 @@ const i18nNodes = document.querySelectorAll("[data-i18n]");
 const cookieTrigger = document.querySelector("[data-cookie-trigger]");
 const cookieModal = document.querySelector("[data-cookie-modal]");
 const cookieClose = document.querySelector("[data-cookie-close]");
+const imprintTrigger = document.querySelector("[data-imprint-trigger]");
+const imprintModal = document.querySelector("[data-imprint-modal]");
+const imprintClose = document.querySelector("[data-imprint-close]");
 const imageTriggers = document.querySelectorAll("[data-image-trigger]");
 const imageModal = document.querySelector("[data-image-modal]");
 const imagePreview = document.querySelector("[data-image-preview]");
@@ -229,6 +271,14 @@ const setCookieModalState = (isOpen) => {
 	cookieModal.setAttribute("aria-hidden", String(!isOpen));
 	if (isOpen) {
 		cookieClose.focus();
+	}
+};
+
+const setImprintModalState = (isOpen) => {
+	imprintModal.classList.toggle("is-open", isOpen);
+	imprintModal.setAttribute("aria-hidden", String(!isOpen));
+	if (isOpen) {
+		imprintClose.focus();
 	}
 };
 
@@ -292,6 +342,7 @@ document.addEventListener("keydown", (event) => {
 		closeLanguageMenu();
 		setMenuState(false);
 		setCookieModalState(false);
+		setImprintModalState(false);
 		setImageModalState(false);
 	}
 });
@@ -301,6 +352,17 @@ cookieClose.addEventListener("click", () => setCookieModalState(false));
 cookieModal.addEventListener("click", (event) => {
 	if (event.target === cookieModal) {
 		setCookieModalState(false);
+	}
+});
+
+imprintTrigger.addEventListener("click", (event) => {
+	event.preventDefault();
+	setImprintModalState(true);
+});
+imprintClose.addEventListener("click", () => setImprintModalState(false));
+imprintModal.addEventListener("click", (event) => {
+	if (event.target === imprintModal) {
+		setImprintModalState(false);
 	}
 });
 

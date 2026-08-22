@@ -119,7 +119,7 @@
 			<nav class="footer-nav" aria-label="Footer Navigation">
 				<a href="#" data-i18n="footer.socials">SOZIALES</a>
 				<a href="#" data-i18n="footer.contact">KONTAKT</a>
-				<a href="#" data-i18n="footer.imprint">IMPRESSUM</a>
+				<a href="#" data-i18n="footer.imprint" data-imprint-trigger>IMPRESSUM</a>
 				<a href="#" data-i18n="footer.legal">RECHTLICHES</a>
 			</nav>
 		</footer>
@@ -161,6 +161,46 @@
 				<p data-i18n="cookie.control">Du kannst gespeicherte Website-Daten jederzeit über die Einstellungen deines Browsers löschen. Wenn du eine andere Sprache auswählst, wird die neue Auswahl automatisch übernommen.</p>
 			</section>
 
+		</div>
+	</div>
+
+	<div class="cookie-modal" role="dialog" aria-modal="true" aria-labelledby="imprint-modal-title" aria-hidden="true" data-imprint-modal>
+		<div class="cookie-modal-content">
+			<div class="cookie-modal-header">
+				<div class="cookie-modal-title">
+					<h2 id="imprint-modal-title" data-i18n="imprint.title">IMPRESSUM</h2>
+				</div>
+				<button class="cookie-modal-dismiss" type="button" aria-label="Impressum schließen" data-imprint-close>
+					<i data-lucide="x" aria-hidden="true"></i>
+				</button>
+			</div>
+
+			<div class="cookie-modal-rule"></div>
+
+			<section class="cookie-modal-section">
+				<h3 data-i18n="imprint.provider">ANGABEN GEMÄSS § 5 TMG</h3>
+				<p><span>Rayven</span><br><span data-i18n="imprint.city">86316 FRIEDBERG</span></p>
+			</section>
+
+			<section class="cookie-modal-section">
+				<h3 data-i18n="imprint.contact">KONTAKT</h3>
+				<p><span data-i18n="imprint.emailLabel">E-MAIL:</span> <a href="mailto:rayvenclan@proton.me">rayvenclan@proton.me</a></p>
+			</section>
+
+			<section class="cookie-modal-section">
+				<h3 data-i18n="imprint.disclaimer">HAFTUNGSAUSSCHLUSS</h3>
+				<p data-i18n="imprint.disclaimerText">Die Inhalte dieser Website wurden mit größtmöglicher Sorgfalt erstellt. Für die Richtigkeit, Vollständigkeit und Aktualität der Inhalte können wir jedoch keine Gewähr übernehmen.</p>
+			</section>
+
+			<section class="cookie-modal-section">
+				<h3 data-i18n="imprint.externalLinks">EXTERNE LINKS</h3>
+				<p data-i18n="imprint.externalLinksText">Diese Website enthält Links zu externen Websites Dritter, auf deren Inhalte wir keinen Einfluss haben. Für die Inhalte der verlinkten Seiten ist stets der jeweilige Anbieter oder Betreiber der Seiten verantwortlich.</p>
+			</section>
+
+			<section class="cookie-modal-section">
+				<h3 data-i18n="imprint.copyright">URHEBERRECHT</h3>
+				<p data-i18n="imprint.copyrightText">Die durch die Seitenbetreiber erstellten Inhalte und Werke auf dieser Website unterliegen dem deutschen Urheberrecht. Die Vervielfältigung, Bearbeitung, Verbreitung und jede Art der Verwertung außerhalb der Grenzen des Urheberrechts bedürfen der schriftlichen Zustimmung des jeweiligen Autors bzw. Erstellers.</p>
+			</section>
 		</div>
 	</div>
 
